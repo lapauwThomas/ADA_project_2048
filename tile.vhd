@@ -46,10 +46,15 @@ entity tile is
            INITVAL 				: in  STD_LOGIC_VECTOR 	(3 downto 0);
 
 			  
-			  LEFT_CANMERGE 		: out  STD_LOGIC;
-			  RIGHT_CANMERGE 		: out  STD_LOGIC;
-			  TOP_CANMERGE 		: out  STD_LOGIC;
-			  BOTTOM_CANMERGE 	: out  STD_LOGIC;
+			  ALLOW_FROM_LEFT		: out  STD_LOGIC;
+			  ALLOW_FROM_RIGHT	: out  STD_LOGIC;
+			  ALLOW_FROM_TOP		: out  STD_LOGIC;
+			  ALLOW_FROM_BOTTOM	: out  STD_LOGIC;
+			  
+			  MOVE_INTO_LEFT		: in  STD_LOGIC;
+			  MOVE_INTO_RIGHT		: in  STD_LOGIC;
+			  MOVE_INTO_TOP		: in  STD_LOGIC;
+			  MOVE_INTO_BOTTOM	: in  STD_LOGIC;
 			  
 			  RESET 					: in  STD_LOGIC
 			  );
@@ -92,29 +97,94 @@ begin
 			
 		when s_Idle =>
 			--Idle state
-			
-		when s_Merge =>
-			-- Move state
+
+		--///////////////////////////////////// CHECK MERGE /////////////////////////////////////	
+		when s_checkMerge =>  --move this into a combinatorial block???
 			case DIRECTION is
 				when dirLeft =>
-					if VALUE = RIGHT_TILE then --if mergable in this direction
-						VALUE((busWidth-1) downto 0) <= VALUE((busWidth-2) downto 0) & '0'; --Merge in standard rules equals shift to left
-					end if;
-				when dirUp =>
-					if VALUE = BOTTOM_TILE then --if mergable in this direction
-						VALUE((busWidth-1) downto 0) <= VALUE((busWidth-2) downto 0) & '0'; --Merge in standard rules equals shift to left
-					end if;
+						if (MOVE_INTO_LEFT = '0'  and VALUE = RIGHT_TILE) then --if block cannot merge into left block, check if can be merged into from right block and let it know
+							ALLOW_FROM_RIGHT <= '1';
+						else
+							ALLOW_FROM_RIGHT <= '0';
+						end if;
+
+					
 				when dirRight =>					
-					if VALUE = LEFT_TILE then --if mergable in this direction
-						VALUE((busWidth-1) downto 0) <= VALUE((busWidth-2) downto 0) & '0'; --Merge in standard rules equals shift to left
-					end if;
+						if (MOVE_INTO_RIGHT = '0'  and VALUE = LEFT_TILE) then --if block cannot merge into right block, check if can be merged into from right block and let it know
+							ALLOW_FROM_LEFT <= '1';
+						else
+							ALLOW_FROM_LEFT <= '0';
+						end if;
+
+					
+					
+				when dirUp =>
+						if (MOVE_INTO_TOP = '0')  and (VALUE = BOTTOM_TILE) then --if block cannot merge into left block, check if can be merged into from right block and let it know
+							ALLOW_FROM_BOTTOM <= '1';
+						else
+							ALLOW_FROM_BOTTOM <= '0';
+						end if;
+
+
+
 				when dirDown =>
-					if VALUE = TOP_TILE then --if mergable in this direction
-						VALUE((busWidth-1) downto 0) <= VALUE((busWidth-2) downto 0) & '0'; --Merge in standard rules equals shift to left
-					end if;
+						if (MOVE_INTO_BOTTOM = '0')  and (VALUE = TOP_TILE) then --if block cannot merge into left block, check if can be merged into from right block and let it know
+							ALLOW_FROM_TOP <= '1';
+						else
+							ALLOW_FROM_TOP <= '0';
+						end if;
+
 			end case;
-			--Do merge
-			nextState <= s_Merge;
+			currentState <= s_Merge;
+			
+		--///////////////////////////////////// MERGE /////////////////////////////////////	
+		when s_Merge =>
+			case DIRECTION is
+				when dirLeft =>
+					if  MOVE_INTO_LEFT = '1' then --if block can merge into left block
+						VALUE <= ( others => 0); --Clear value if merged into neighbour
+					else
+						if VALUE = RIGHT_TILE then --can be merged into from right block
+							VALUE <= VALUE((busWidth-1) downto 1)&'0'; -- merge is left shift in standard rules
+						end if;
+						-- No else cause nothing else can happen
+					end if;
+					
+				when dirRight =>					
+					if  MOVE_INTO_RIGHT = '1' then --if block can merge into left block
+						VALUE <= ( others => 0); --Clear value if merged into neighbour
+					else
+						if VALUE = LEFT_TILE then --can be merged into from left block
+							VALUE <= VALUE((busWidth-1) downto 1)&'0'; -- merge is left shift in standard rules
+						end if;
+						-- No else cause nothing else can happen
+					end if;
+					
+					
+				when dirUp =>
+					if  MOVE_INTO_TOP = '1' then --if block can merge into left block
+						VALUE <= ( others => 0); --Clear value if merged into neighbour
+					else
+						if VALUE = BOTTOM_TILE then --can be merged into from top block
+							VALUE <= VALUE((busWidth-1) downto 1)&'0'; -- merge is left shift in standard rules
+						end if;
+						-- No else cause nothing else can happen
+					end if;
+					
+
+				when dirDown =>
+					if  MOVE_INTO_BOTTOM = '1' then --if block can merge into left block
+						VALUE <= ( others => 0); --Clear value if merged into neighbour
+					else
+						if VALUE = TOP_TILE then --can be merged into from top block
+							VALUE <= VALUE((busWidth-1) downto 1)&'0'; -- merge is left shift in standard rules
+						end if;
+						-- No else cause nothing else can happen
+					end if;
+					
+			end case;
+			
+			nextState <= s_Move;
 			
 		when s_Move =>
 						-- Move state
