@@ -1,24 +1,153 @@
 # Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
-# do {example_file_io_tb.fdo}
+# do {TB_tile2.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:31:50 on May 12,2017
-# vcom -reportprogress 300 -explicit -93 vectorIO_tb.vhd 
+# Start time: 19:17:09 on May 23,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity example_file_io_tb
-# -- Compiling architecture behave of example_file_io_tb
-# ** Error: vectorIO_tb.vhd(38): (vcom-1144) Value 0 (of type std.STANDARD.POSITIVE) is out of range 1 to 2147483647.
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:17:10 on May 23,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:17:10 on May 23,2017
+# vcom -reportprogress 300 -explicit -93 TB_tile2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_tile2
+# -- Compiling architecture behavior of TB_tile2
+# End time: 19:17:10 on May 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui -do "do {TB_tile2.fdo}" 
+# Start time: 19:17:10 on May 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_tile2(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tile(behavioral)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
-# ** Error: vectorIO_tb.vhd(71): VHDL Compiler exiting
-# End time: 17:31:50 on May 12,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
-# Error in macro ./example_file_io_tb.fdo line 23
-# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
-#     while executing
-# "vcom -explicit  -93 "vectorIO_tb.vhd""
+#           File in use by: thoma  Hostname: THOMAS-X360  ProcessID: 4064
+# 
+#           Attempting to use alternate WLF file "./wlftd48nzr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftd48nzr
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do {TB_tile2.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:18:34 on May 23,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:18:34 on May 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:18:34 on May 23,2017
+# vcom -reportprogress 300 -explicit -93 TB_tile2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_tile2
+# -- Compiling architecture behavior of TB_tile2
+# End time: 19:18:34 on May 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 19:18:36 on May 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_tile2(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tile(behavioral)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: thoma  Hostname: THOMAS-X360  ProcessID: 4064
+# 
+#           Attempting to use alternate WLF file "./wlftf7hgym".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftf7hgym
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do {TB_tile2.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:19:56 on May 23,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:19:56 on May 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:19:56 on May 23,2017
+# vcom -reportprogress 300 -explicit -93 TB_tile2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_tile2
+# -- Compiling architecture behavior of TB_tile2
+# End time: 19:19:57 on May 23,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 19:19:58 on May 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_tile2(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tile(behavioral)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: thoma  Hostname: THOMAS-X360  ProcessID: 4064
+# 
+#           Attempting to use alternate WLF file "./wlftidt5bw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftidt5bw
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 10:10:40 on May 24,2017, Elapsed time: 14:50:42
+# Errors: 0, Warnings: 2
