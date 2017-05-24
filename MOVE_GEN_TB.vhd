@@ -63,6 +63,12 @@ ARCHITECTURE behavior OF MOVE_GEN_TB IS
 
    -- Clock period definitions
    constant clk_period : time := 20 ns;
+	
+	constant dirLeft: std_logic_vector(1 downto 0) := "00";
+constant dirUp: std_logic_vector(1 downto 0) := "01";
+constant dirRight: std_logic_vector(1 downto 0) := "10";
+constant dirDown: std_logic_vector(1 downto 0) := "11";
+
  
 BEGIN
  
@@ -95,7 +101,7 @@ BEGIN
 		input_character <= x"52"; --R
 		
 		wait for clk_period;
-		assert (direction = "00") report "MOVE_GEN: error during reset";
+		assert (direction = dirLeft) report "MOVE_GEN: error during reset";
 		
 		wait for 10*clk_period;
 		reset <= '0';
@@ -124,7 +130,7 @@ BEGIN
 
 		
 		wait for clk_period;
-		assert (direction = "00") report "MOVE_GEN: error during up";
+		assert (direction = dirLeft) report "MOVE_GEN: error during left";
 		assert (valid = '1') report "MOVE_GEN: error with valid signal";
 		input_character <= x"00"; --INVALID
 

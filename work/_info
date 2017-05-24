@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project
 Eboard_4x4
-Z1 w1495634604
+Z1 w1495644190
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -21,9 +21,9 @@ VWKZSz6;4UH:QjK9>l@FoT1
 !s100 bcEDV?faR@7[<o5e9`XU>0
 Z6 OP;C;10.4a;61
 31
-Z7 !s110 1495636200
+Z7 !s110 1495644210
 !i10b 1
-Z8 !s108 1495636200.000000
+Z8 !s108 1495644209.000000
 Z9 !s90 -reportprogress|300|-explicit|-93|board_4x4.vhd|
 Z10 !s107 board_4x4.vhd|
 !i113 1
@@ -35,8 +35,8 @@ R3
 DEx4 work 9 board_4x4 0 22 WKZSz6;4UH:QjK9>l@FoT1
 l237
 L73
-VBd>TXc8RJ;FjS99la^ah_2
-!s100 ac[kL^EI53YT<9gPFjBY12
+Vg4KM3CoZOC:2eIj9W6iUJ2
+!s100 [leeW7cHz;Z]>MEP8X]Z_3
 R6
 31
 R7
@@ -47,69 +47,110 @@ R10
 !i113 1
 R11
 R12
+Efileio
+Z13 w1495643532
+Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R3
+R2
+R0
+Z15 8FileIO.vhd
+Z16 FFileIO.vhd
+l0
+L36
+VW3HR]LRUWhb^iRzOW]O?G1
+!s100 LA^MBbbeQU_]f_o_N2mWM0
+R6
+31
+R7
+!i10b 1
+Z17 !s108 1495644210.000000
+Z18 !s90 -reportprogress|300|-explicit|-93|FileIO.vhd|
+Z19 !s107 FileIO.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R3
+R2
+Z20 DEx4 work 6 fileio 0 22 W3HR]LRUWhb^iRzOW]O?G1
+l184
+L40
+Z21 VlGc9Nn54;`SC;N5]mSGU]2
+Z22 !s100 E=bz]g2U6nJ<ZQX38c9hE2
+R6
+31
+R7
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
 Etb_board
-Z13 w1495636198
+Z23 w1495636198
 R2
 R3
 R0
-Z14 8TB_board.vhd
-Z15 FTB_board.vhd
+Z24 8TB_board.vhd
+Z25 FTB_board.vhd
 l0
 L35
 VzVXP2oF8P3`KA87T=8dWH2
 !s100 IHCRNBe1RJMX2J48T<H;J2
 R6
 31
-R7
+Z26 !s110 1495640768
 !i10b 1
-R8
-Z16 !s90 -reportprogress|300|-explicit|-93|TB_board.vhd|
-Z17 !s107 TB_board.vhd|
+Z27 !s108 1495640768.000000
+Z28 !s90 -reportprogress|300|-explicit|-93|TB_board.vhd|
+Z29 !s107 TB_board.vhd|
 !i113 1
 R11
 R12
 Abehavior
 R2
 R3
-Z18 DEx4 work 8 tb_board 0 22 zVXP2oF8P3`KA87T=8dWH2
+DEx4 work 8 tb_board 0 22 zVXP2oF8P3`KA87T=8dWH2
 l109
 L38
 V3N]lW3QKV5>:`Hc0Ycl;R2
 !s100 Dejf9B0PF@4Eac^L^IEYI3
 R6
 31
-R7
+R26
 !i10b 1
-R8
-R16
-R17
+R27
+R28
+R29
 !i113 1
 R11
 R12
 Etile
-Z19 w1495634974
-Z20 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z30 w1495634974
+R14
 R2
 R3
 R0
-Z21 8tile.vhd
-Z22 Ftile.vhd
+Z31 8tile.vhd
+Z32 Ftile.vhd
 l0
 L33
 V9ZNfK_^fn<7lQLU^kI?:[3
 !s100 JgJT6;Ph^ozC6]UV:MS5C2
 R6
 31
-Z23 !s110 1495636199
+Z33 !s110 1495644209
 !i10b 1
-Z24 !s108 1495636199.000000
-Z25 !s90 -reportprogress|300|-explicit|-93|tile.vhd|
-Z26 !s107 tile.vhd|
+R8
+Z34 !s90 -reportprogress|300|-explicit|-93|tile.vhd|
+Z35 !s107 tile.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R20
+R14
 R2
 R3
 DEx4 work 4 tile 0 22 9ZNfK_^fn<7lQLU^kI?:[3
@@ -119,11 +160,11 @@ VXE==^Mhz>1GdS@KP;j1Lz3
 !s100 f_VS^g3RWhLQ_F2T=0B5]1
 R6
 31
-R23
+R33
 !i10b 1
-R24
-R25
-R26
+R8
+R34
+R35
 !i113 1
 R11
 R12

@@ -41,6 +41,12 @@ entity MOVE_GEN is
 end MOVE_GEN;
 
 architecture Behavioral of MOVE_GEN is
+
+constant dirLeft: std_logic_vector(1 downto 0) := "00";
+constant dirUp: std_logic_vector(1 downto 0) := "01";
+constant dirRight: std_logic_vector(1 downto 0) := "10";
+constant dirDown: std_logic_vector(1 downto 0) := "11";
+
 begin
 	process(clk)
 	begin
@@ -52,16 +58,16 @@ begin
 				if enable = '1' then
 					case input_character is
 						when x"55" =>  --ASCII: 55 = U 
-							direction <= "00";
+							direction <= dirUp;
 							valid <= '1';
 						when x"44" =>  --ASCII: 44 = D 
-							direction <= "01";
+							direction <= dirDown;
 							valid <= '1';
 						when x"4C" =>  --ASCII: 4C = L 
-							direction <= "10";
+							direction <= dirLeft;
 							valid <= '1';						
 						when x"52" =>  --ASCII: 52 = R 
-							direction <= "11";
+							direction <= dirRight;
 							valid <= '1';						
 						when others => --other ASCII characters are not valid
 							valid <= '0';
