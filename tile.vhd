@@ -45,6 +45,8 @@ entity tile is
 
            INIT					: in  STD_LOGIC;
            INITVAL 				: in  STD_LOGIC_VECTOR 	((busWidth-1) downto 0);
+			  
+			  ISZERO : out std_logic;
 
 			  MOVE_OUT_LEFT		: OUT  STD_LOGIC_VECTOR 	(1 downto 0);
 			  MOVE_OUT_RIGHT		: OUT  STD_LOGIC_VECTOR 	(1 downto 0);
@@ -81,7 +83,7 @@ constant ones: std_logic_vector((busWidth-1) downto 0) := (others => '1');
 
 signal sigVALUE: std_logic_vector ((busWidth-1) downto 0);
 signal sigVALUE_REG: std_logic_vector ((busWidth-1) downto 0);
-signal canDoMove: std_logic;
+
 
 
 
@@ -140,17 +142,14 @@ begin
 			currentState <= s_Reset;
 			sigVALUE_REG <= (OTHERS => '0');
 			counter <= 0;
-		elsif INIT = '1' then --goto init state
-			currentState <= s_Init;
-			sigVALUE_REG <= INITVAL;
-			counter <= 0;
+	
 		else
 			currentState <= nextState;
 			sigVALUE_REG <= sigVALUE;
 			if counter_enable = '0' then
 				counter <= 0;
 			else
-			counter <= counter +1;
+				counter <= counter +1;
 			end if;
 		end if;
 	end if;
@@ -158,9 +157,9 @@ end process fsmProcess;
 ---------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------
-fsmStateLogic: process(currentState, canDoMove, sigVALUE_REG, INITVAL, EXECUTE, DIRECTION, MERGE_INTO_LEFT, RIGHT_TILE, MERGE_INTO_RIGHT, 
+fsmStateLogic: process(currentState, sigVALUE_REG, INITVAL, EXECUTE, DIRECTION, MERGE_INTO_LEFT, RIGHT_TILE, MERGE_INTO_RIGHT, 
 								LEFT_TILE, MERGE_INTO_TOP, BOTTOM_TILE, MERGE_INTO_BOTTOM, TOP_TILE,    
-								MOVE_INTO_LEFT, MOVE_INTO_TOP, MOVE_INTO_RIGHT, MOVE_INTO_BOTTOM, counter)
+								MOVE_INTO_LEFT, MOVE_INTO_TOP, MOVE_INTO_RIGHT, MOVE_INTO_BOTTOM, counter, INIT)
 begin
 	case currentState is
 		
@@ -178,6 +177,9 @@ begin
 			if(EXECUTE = '1') then -- wait for newMove trigger
 				nextState <= s_Move_preMerge;
 				counter_enable <= '1';
+			elsif (INIT = '1') then --goto init state
+				nextState <= s_Init;
+				counter_enable <= '0';
 			else
 				nextState <= s_Idle;
 				counter_enable <= '0';
@@ -383,7 +385,7 @@ begin
 --			nextState <= s_CheckMove_postMerge;
 
 
-			if ( counter < maxMoves_preMerge) then 
+			if ( counter < maxMoves_postMerge) then 
 				nextState <= s_Move_postMerge;
 				counter_enable <= '1';
 			else 
@@ -394,7 +396,8 @@ begin
 --///////////////////////////////////// OTHERS /////////////////////////////////////			
 		when others => --if into unknown state go to reset state
 			nextState <= s_Reset;
-		sigVALUE <= sigVALUE_REG;
+			sigVALUE <= sigVALUE_REG;
+			counter_enable <= '0';
 		
 
 	end case;
@@ -462,6 +465,15 @@ begin
 		end if;
 
 end process mergeChecks;
+
+iszeroProc: process(sigVALUE_REG)
+begin
+if (sigVALUE_REG /= zeroes) then
+ISZERO <= '0';
+else
+ISZERO <= '1';
+end if;
+end process iszeroProc;
 
 
 end Behavioral;

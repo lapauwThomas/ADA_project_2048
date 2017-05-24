@@ -1,9 +1,7 @@
 # Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
-# do {TB_tile2.fdo}
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
+# do {TB_board.fdo}
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:17:09 on May 23,2017
+# Start time: 16:16:31 on May 24,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -11,17 +9,351 @@
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 19:17:10 on May 23,2017, Elapsed time: 0:00:01
+# End time: 16:16:31 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:17:10 on May 23,2017
-# vcom -reportprogress 300 -explicit -93 TB_tile2.vhd 
+# Start time: 16:16:31 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity TB_tile2
-# -- Compiling architecture behavior of TB_tile2
-# End time: 19:17:10 on May 23,2017, Elapsed time: 0:00:00
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:16:31 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:16:31 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# ** Error: TB_board.vhd(164): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(174): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(174): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(176): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(176): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(180): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(189): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(189): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(191): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(191): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(195): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(202): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(209): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(216): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(223): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(230): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(237): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(244): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(254): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(254): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(256): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(256): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(259): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(266): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(273): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(280): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(287): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(297): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(297): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(299): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(299): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(302): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(309): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(316): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(323): (vcom-1136) Unknown identifier "dirLEFT".
+# 
+# ** Error: TB_board.vhd(330): (vcom-1136) Unknown identifier "dirRIGHT".
+# 
+# ** Error: TB_board.vhd(342): VHDL Compiler exiting
+# End time: 16:16:31 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 0
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./TB_board.fdo line 25
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "TB_board.vhd""
+do {TB_board.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:16:59 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 16:17:00 on May 24,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:17:00 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:17:00 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:17:00 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# ** Error: TB_board.vhd(182): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(182): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(184): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(184): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(197): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(197): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(199): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(199): (vcom-1136) Unknown identifier "INIT_BL2".
+# 
+# ** Error: TB_board.vhd(262): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(262): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(264): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(264): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(305): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(305): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(307): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(307): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(350): VHDL Compiler exiting
+# End time: 16:17:00 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 17, Warnings: 0
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./TB_board.fdo line 25
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "TB_board.vhd""
+do {TB_board.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:17:57 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 16:17:57 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:17:57 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:17:58 on May 24,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:17:58 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# ** Error: TB_board.vhd(262): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(262): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(264): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(264): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(305): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(305): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(307): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(307): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(350): VHDL Compiler exiting
+# End time: 16:17:58 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./TB_board.fdo line 25
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "TB_board.vhd""
+do {TB_board.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:13 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 16:18:13 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:13 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:18:14 on May 24,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:14 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# ** Error: TB_board.vhd(262): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(262): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(264): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(264): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(305): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(305): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(307): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(307): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(350): VHDL Compiler exiting
+# End time: 16:18:14 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./TB_board.fdo line 25
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "TB_board.vhd""
+do {TB_board.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:34 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 16:18:34 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:34 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:18:34 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:34 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# ** Error: TB_board.vhd(262): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(262): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(264): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(264): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(305): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(305): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(307): Illegal target for signal assignment.
+# ** Error: TB_board.vhd(307): (vcom-1136) Unknown identifier "INIT_BL1".
+# 
+# ** Error: TB_board.vhd(350): VHDL Compiler exiting
+# End time: 16:18:34 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./TB_board.fdo line 25
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "TB_board.vhd""
+do {TB_board.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:44 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 16:18:44 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:44 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:18:44 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:18:44 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# End time: 16:18:44 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.4a Apr  7 2015 
 # //
@@ -41,31 +373,27 @@
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui -do "do {TB_tile2.fdo}" 
-# Start time: 19:17:10 on May 23,2017
+# vsim -gui -do "do {TB_board.fdo}" 
+# Start time: 16:18:45 on May 24,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_tile2(behavior)
+# Loading work.tb_board(behavior)
+# Loading work.board_4x4(behavioral)
 # Loading ieee.std_logic_arith(body)
 # Loading work.tile(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: thoma  Hostname: THOMAS-X360  ProcessID: 4064
-# 
-#           Attempting to use alternate WLF file "./wlftd48nzr".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftd48nzr
-# 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-do {TB_tile2.fdo}
+add wave -position insertpoint  \
+sim:/tb_board/uut/BL44/INIT
+restart -f; run 100us -all
+restart -f; run 100us -all
+do {TB_board.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:18:34 on May 23,2017
+# Start time: 16:27:59 on May 24,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -73,43 +401,45 @@ do {TB_tile2.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 19:18:34 on May 23,2017, Elapsed time: 0:00:00
+# End time: 16:27:59 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:18:34 on May 23,2017
-# vcom -reportprogress 300 -explicit -93 TB_tile2.vhd 
+# Start time: 16:27:59 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity TB_tile2
-# -- Compiling architecture behavior of TB_tile2
-# End time: 19:18:34 on May 23,2017, Elapsed time: 0:00:00
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:27:59 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:27:59 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# End time: 16:27:59 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim 
-# Start time: 19:18:36 on May 23,2017
+# Start time: 16:28:01 on May 24,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_tile2(behavior)
+# Loading work.tb_board(behavior)
+# Loading work.board_4x4(behavioral)
 # Loading ieee.std_logic_arith(body)
 # Loading work.tile(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: thoma  Hostname: THOMAS-X360  ProcessID: 4064
-# 
-#           Attempting to use alternate WLF file "./wlftf7hgym".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftf7hgym
-# 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-do {TB_tile2.fdo}
+do {TB_board.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:19:56 on May 23,2017
+# Start time: 16:29:59 on May 24,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -117,37 +447,37 @@ do {TB_tile2.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 19:19:56 on May 23,2017, Elapsed time: 0:00:00
+# End time: 16:30:00 on May 24,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:19:56 on May 23,2017
-# vcom -reportprogress 300 -explicit -93 TB_tile2.vhd 
+# Start time: 16:30:00 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity TB_tile2
-# -- Compiling architecture behavior of TB_tile2
-# End time: 19:19:57 on May 23,2017, Elapsed time: 0:00:01
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:30:00 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:30:00 on May 24,2017
+# vcom -reportprogress 300 -explicit -93 TB_board.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_board
+# -- Compiling architecture behavior of TB_board
+# End time: 16:30:00 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim 
-# Start time: 19:19:58 on May 23,2017
+# Start time: 16:30:01 on May 24,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_tile2(behavior)
+# Loading work.tb_board(behavior)
+# Loading work.board_4x4(behavioral)
 # Loading ieee.std_logic_arith(body)
 # Loading work.tile(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: thoma  Hostname: THOMAS-X360  ProcessID: 4064
-# 
-#           Attempting to use alternate WLF file "./wlftidt5bw".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftidt5bw
-# 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 10:10:40 on May 24,2017, Elapsed time: 14:50:42
-# Errors: 0, Warnings: 2
