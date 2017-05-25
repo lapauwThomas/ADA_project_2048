@@ -2217,3 +2217,2384 @@ do {GAME_SIM.fdo}
 #    Time: 6410 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
 #    Time: 6650 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:37:51 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 16:37:51 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:37:51 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 16:37:51 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:37:51 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 16:37:52 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:37:52 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 16:37:52 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:37:52 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 16:37:52 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:37:52 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 16:37:52 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 16:37:54 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 885 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1100 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1210 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1215 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1320 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1325 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1430 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1540 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1910 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1915 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2020 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2130 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2240 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2410 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2520 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2640 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2760 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2870 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2980 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3110 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3220 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3560 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3670 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3780 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3960 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4070 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4190 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4310 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4450 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4670 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4850 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5090 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5250 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5410 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5600 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5720 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6080 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6320 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6480 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 18:57:17 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 18:57:17 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 18:57:17 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 18:57:17 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 18:57:17 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 18:57:17 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 18:57:17 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 18:57:17 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 18:57:17 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 18:57:17 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 18:57:17 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 18:57:18 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 18:57:20 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 780 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 900 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 905 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1010 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1015 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1120 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1125 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1230 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1340 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1450 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1580 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1585 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1720 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1725 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1830 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1835 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1845 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1855 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1970 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1975 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2110 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2220 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2330 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_MOVE_GEN/valid
+restart -f; run 100us -all
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 780 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 900 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 905 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1010 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1015 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1120 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1125 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1230 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1340 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1450 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1580 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1585 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1720 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1725 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1830 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1835 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1845 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1855 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1970 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1975 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2110 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2220 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2330 ns  Iteration: 1  Instance: /game_sim
+restart -f; run 100us -all
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 815 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 825 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 835 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 950 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 955 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1070 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1075 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1190 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1195 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1305 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1410 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1670 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1675 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1780 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1890 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1895 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2 us  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2005 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2110 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2115 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2125 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2135 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2145 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2250 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2255 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2370 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2480 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2590 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2700 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:17:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:17:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:17:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 19:17:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:17:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 19:17:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:17:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 19:17:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:17:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 19:17:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:17:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 19:17:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 19:17:11 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 465 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 475 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 485 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 535 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 575 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 685 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 790 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_MOVE_GEN/valid
+restart -f; run 100us -all
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 465 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 475 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 485 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 535 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 575 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 685 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 790 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/EXECUTE
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/ENABLE_READMOVE
+restart -f; run 100us -all
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 465 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 475 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 485 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 535 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 575 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 685 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 790 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/VALIDDIRECTIONS_SIG
+restart -f; run 100us -all
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 465 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 475 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 485 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 535 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 575 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 685 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 790 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:26:16 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:26:16 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:26:16 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 19:26:16 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:26:16 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 19:26:16 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:26:16 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 19:26:16 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:26:16 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 19:26:16 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:26:16 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 19:26:16 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 19:26:18 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 465 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 475 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 485 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 535 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 575 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 685 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 790 ns  Iteration: 1  Instance: /game_sim
+env ..
+# sim:/game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_MOVE_GEN/valid
+restart -f; run 100us -all
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 465 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 475 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 485 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 535 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 575 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 685 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 790 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/DIR_VALID
+restart -f; run 100us -all
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 465 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 475 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 485 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 535 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 575 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 685 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 790 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:35:08 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:35:08 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:35:08 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 19:35:08 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:35:08 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 19:35:08 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:35:08 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 19:35:09 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:35:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 19:35:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:35:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 19:35:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 19:35:11 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 815 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 825 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 835 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 940 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 945 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1050 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1055 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1170 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1175 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1305 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1430 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1435 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1540 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1670 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1675 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1840 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1845 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1950 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1955 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2060 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2065 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2075 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2085 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2095 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2210 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2215 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2320 ns  Iteration: 1  Instance: /game_sim
+step -over -current
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:38:49 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:38:49 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:38:49 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 19:38:49 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:38:49 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 19:38:49 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:38:49 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 19:38:49 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:38:49 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 19:38:49 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:38:49 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 19:38:49 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 19:38:51 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 815 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 825 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 835 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 845 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 855 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 875 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 885 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 895 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 905 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 915 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 925 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 935 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 945 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 955 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 965 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 975 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 985 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1005 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1015 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1025 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1035 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1045 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1055 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1065 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1075 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1085 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1095 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1115 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1125 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1135 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1145 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1155 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1165 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1175 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1185 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1195 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1205 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1215 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1245 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1255 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1265 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1275 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1285 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1295 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1305 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1315 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1325 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1500 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1610 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1615 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1730 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1735 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1860 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2100 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2230 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2400 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2510 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2620 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2625 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2635 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2645 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2655 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2880 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:40:05 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:40:05 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:40:05 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 19:40:05 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:40:05 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 19:40:05 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:40:05 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 19:40:05 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:40:05 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 19:40:05 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:40:06 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 19:40:06 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 19:40:08 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 815 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 825 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 835 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 845 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 855 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 875 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 885 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 895 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 905 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 915 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 925 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 935 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 945 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 955 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 965 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 975 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 985 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1005 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1015 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1025 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1035 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1045 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1055 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1065 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1075 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1085 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1095 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1115 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1125 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1135 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1145 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1155 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1165 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1175 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1185 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1195 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1205 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1215 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1245 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1255 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1265 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1275 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1285 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1295 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1305 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1315 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1325 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1500 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1610 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1615 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1730 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1735 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1860 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2100 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2230 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2400 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2510 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2620 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2625 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2635 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2645 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2655 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2885 ns  Iteration: 1  Instance: /game_sim
+step
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:35 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 19:42:35 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:35 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 19:42:35 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:35 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 19:42:35 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:35 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 19:42:36 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:36 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 19:42:36 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:36 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 19:42:36 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 19:42:38 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 815 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 825 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 835 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 845 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 855 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 875 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 885 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 895 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 905 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 915 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 925 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 935 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 945 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 955 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 965 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 975 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 985 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1005 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1015 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1025 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1035 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1045 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1055 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1065 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1075 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1085 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1095 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1115 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1125 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1135 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1145 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1155 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1165 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1175 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1185 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1195 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1205 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1215 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1245 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1255 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1265 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1275 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1285 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1295 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1305 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1315 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1325 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1335 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1355 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1375 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1395 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1500 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1505 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1610 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1615 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1730 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1735 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1860 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1865 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 1990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2100 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2230 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2400 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2405 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2510 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2620 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2625 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2635 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2645 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2655 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2665 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 2880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2885 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 2895 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3030 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3035 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3230 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3340 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3510 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3515 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3650 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3655 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3760 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3765 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3885 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 3995 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4100 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4105 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4230 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4235 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4340 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4345 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4450 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4455 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4560 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4565 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4670 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4675 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4780 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4940 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4945 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 4955 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5070 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5075 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5185 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5305 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5410 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5415 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5425 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5540 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5545 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5650 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5655 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5800 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5930 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 5935 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6050 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 6055 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6160 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 6165 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6270 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 6275 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6380 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 6385 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6520 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 6525 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6650 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 6655 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6790 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 6795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 7030 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 7035 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 7170 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 7175 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 7360 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 7365 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 7490 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 7495 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 7600 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 7605 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 7710 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 7715 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 7820 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 7825 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 8090 ns  Iteration: 1  Instance: /game_sim

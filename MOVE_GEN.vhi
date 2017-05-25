@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file MOVE_GEN.vhd -- 10:32:54 05/25/2017
+-- VHDL Instantiation Created from source file MOVE_GEN.vhd -- 19:14:25 05/25/2017
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
@@ -8,9 +8,6 @@
 
 	COMPONENT MOVE_GEN
 	PORT(
-		clk : IN std_logic;
-		reset : IN std_logic;
-		enable : IN std_logic;
 		input_character : IN std_logic_vector(7 downto 0);          
 		direction : OUT std_logic_vector(1 downto 0);
 		valid : OUT std_logic
@@ -18,9 +15,6 @@
 	END COMPONENT;
 
 	Inst_MOVE_GEN: MOVE_GEN PORT MAP(
-		clk => ,
-		reset => ,
-		enable => ,
 		input_character => ,
 		direction => ,
 		valid => 

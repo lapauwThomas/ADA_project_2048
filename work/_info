@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project
 Eboard_4x4
-Z1 w1495718584
+Z1 w1495731236
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -17,13 +17,13 @@ Z4 8board_4x4.vhd
 Z5 Fboard_4x4.vhd
 l0
 L32
-Vl:j=9b9gb_]9m[TR3b^Nm0
-!s100 WiJW>fidC>TTeDmk_NYJH0
+V[Q=l`lJAKID2fIhz>dkE>1
+!s100 WS_AZ?Kg5:o8j9:eZg=j]1
 Z6 OP;C;10.4a;61
 31
-Z7 !s110 1495721316
+Z7 !s110 1495734155
 !i10b 1
-Z8 !s108 1495721316.000000
+Z8 !s108 1495734155.000000
 Z9 !s90 -reportprogress|300|-explicit|-93|board_4x4.vhd|
 Z10 !s107 board_4x4.vhd|
 !i113 1
@@ -32,11 +32,11 @@ Z12 tExplicit 1
 Abehavioral
 R2
 R3
-DEx4 work 9 board_4x4 0 22 l:j=9b9gb_]9m[TR3b^Nm0
-l281
+DEx4 work 9 board_4x4 0 22 [Q=l`lJAKID2fIhz>dkE>1
+l280
 L74
-VBDmPd8JbnhNnLN^2edX<A1
-!s100 `]blPTLP<BO]B<nkO4J2m1
+VF97CD9=3`Wj8Faa<3OmJU2
+!s100 8lhMKg7VJ7RnHLcV<EYcV3
 R6
 31
 R7
@@ -89,7 +89,7 @@ R20
 R11
 R12
 Egame_logic
-Z21 w1495721313
+Z21 w1495733667
 R2
 R3
 R0
@@ -101,11 +101,11 @@ Vf[BG5e@YUNPHA26PaTZ3D3
 !s100 HLkzE7aeLoC6k_ag]RaZN0
 R6
 31
-R7
+Z24 !s110 1495734156
 !i10b 1
-R8
-Z24 !s90 -reportprogress|300|-explicit|-93|Game_logic.vhd|
-Z25 !s107 Game_logic.vhd|
+Z25 !s108 1495734156.000000
+Z26 !s90 -reportprogress|300|-explicit|-93|Game_logic.vhd|
+Z27 !s107 Game_logic.vhd|
 !i113 1
 R11
 R12
@@ -113,39 +113,39 @@ Abehavioral
 R2
 R3
 DEx4 work 10 game_logic 0 22 f[BG5e@YUNPHA26PaTZ3D3
-l152
+l159
 L69
-V^hIOWL6`YAY=o2>zmBLCD1
-!s100 6_=<>G0K]Nd96@?9YG<TH1
+VmCgO?YVP]7GK9=Nkj;3e=2
+!s100 E?2C_DRSIYQoE:=bQOaB>3
 R6
 31
-R7
-!i10b 1
-R8
 R24
+!i10b 1
 R25
+R26
+R27
 !i113 1
 R11
 R12
 Egame_sim
-Z26 w1495720325
+Z28 w1495720325
 R14
 R3
 R2
 R0
-Z27 8GAME_SIM_TB.vhd
-Z28 FGAME_SIM_TB.vhd
+Z29 8GAME_SIM_TB.vhd
+Z30 FGAME_SIM_TB.vhd
 l0
 L36
 VglDgR10ZbFHE6;J5O0TPX2
 !s100 FCb8_2>V7Kd[>?_JbZJF]0
 R6
 31
-R7
+R24
 !i10b 1
-R8
-Z29 !s90 -reportprogress|300|-explicit|-93|GAME_SIM_TB.vhd|
-Z30 !s107 GAME_SIM_TB.vhd|
+R25
+Z31 !s90 -reportprogress|300|-explicit|-93|GAME_SIM_TB.vhd|
+Z32 !s107 GAME_SIM_TB.vhd|
 !i113 1
 R11
 R12
@@ -153,29 +153,29 @@ Abehavioral
 R14
 R3
 R2
-Z31 DEx4 work 8 game_sim 0 22 glDgR10ZbFHE6;J5O0TPX2
+Z33 DEx4 work 8 game_sim 0 22 glDgR10ZbFHE6;J5O0TPX2
 l176
 L40
-Z32 V34F`WzGCnnNE?[n;15S^U2
-Z33 !s100 j=]XPz=dO<Rz2fnS05mjE0
+Z34 V34F`WzGCnnNE?[n;15S^U2
+Z35 !s100 j=]XPz=dO<Rz2fnS05mjE0
 R6
 31
-R7
+R24
 !i10b 1
-R8
-R29
-R30
+R25
+R31
+R32
 !i113 1
 R11
 R12
 Elfsr
-Z34 w1495718597
+Z36 w1495718597
 R14
 R2
 R3
 R0
-Z35 8LFSR.vhd
-Z36 FLFSR.vhd
+Z37 8LFSR.vhd
+Z38 FLFSR.vhd
 l0
 L33
 VZ1dkSRET5:QGjV_zk6LZB1
@@ -184,9 +184,9 @@ R6
 31
 R7
 !i10b 1
-Z37 !s108 1495721315.000000
-Z38 !s90 -reportprogress|300|-explicit|-93|LFSR.vhd|
-Z39 !s107 LFSR.vhd|
+R8
+Z39 !s90 -reportprogress|300|-explicit|-93|LFSR.vhd|
+Z40 !s107 LFSR.vhd|
 !i113 1
 R11
 R12
@@ -203,28 +203,28 @@ R6
 31
 R7
 !i10b 1
-R37
-R38
+R8
 R39
+R40
 !i113 1
 R11
 R12
 Emove_gen
-Z40 w1495708716
+Z41 w1495732022
 R2
 R3
 R0
-Z41 8MOVE_GEN.vhd
-Z42 FMOVE_GEN.vhd
+Z42 8MOVE_GEN.vhd
+Z43 FMOVE_GEN.vhd
 l0
 L34
 VTd0okMXhPim5jlSKz8c_31
 !s100 SJ`6oXz0JJn8gU1DOFjK40
 R6
 31
-Z43 !s110 1495721315
+R7
 !i10b 1
-R37
+R8
 Z44 !s90 -reportprogress|300|-explicit|-93|MOVE_GEN.vhd|
 Z45 !s107 MOVE_GEN.vhd|
 !i113 1
@@ -240,9 +240,9 @@ VN7KiOnD4SzKk`L_ZdO0Wl1
 !s100 83@=R@]OMP;z@hXhfga<=3
 R6
 31
-R43
+R7
 !i10b 1
-R37
+R8
 R44
 R45
 !i113 1
@@ -288,7 +288,7 @@ R52
 R11
 R12
 Etile
-Z53 w1495720980
+Z53 w1495731161
 R14
 R2
 R3
@@ -297,13 +297,13 @@ Z54 8tile.vhd
 Z55 Ftile.vhd
 l0
 L33
-VDOHPZG`7emD:o^1HTT;oZ0
-!s100 MMRG]4M:WF=g<@4cdTBj`3
+V;fidWYG^f?69jjDoIFlQb3
+!s100 0U>NXgENaXVbKig4F@>mo0
 R6
 31
-R43
+R7
 !i10b 1
-R37
+R8
 Z56 !s90 -reportprogress|300|-explicit|-93|tile.vhd|
 Z57 !s107 tile.vhd|
 !i113 1
@@ -313,16 +313,16 @@ Abehavioral
 R14
 R2
 R3
-DEx4 work 4 tile 0 22 DOHPZG`7emD:o^1HTT;oZ0
-l123
-L72
-Vo0OmCFQ>^cgoW6HJ;^^]X0
-!s100 m:d?nghK?S@_Xb?[J>PNl1
+DEx4 work 4 tile 0 22 ;fidWYG^f?69jjDoIFlQb3
+l124
+L73
+V?f1Z`z@19ALCIVeld>Gc_3
+!s100 _Ak58ah8V;d33Wi5S1[9P3
 R6
 31
-R43
+R7
 !i10b 1
-R37
+R8
 R56
 R57
 !i113 1

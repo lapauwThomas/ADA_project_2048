@@ -48,8 +48,9 @@ entity tile is
 			  
 			  ISZERO : out std_logic;
 			  ISIDLE: out std_logic;
-			  CANMOVE: out std_logic;
+			  CANMOVE: out std_logic_vector(3 downto 0);
 
+			  
 			  MOVE_OUT_LEFT		: OUT  STD_LOGIC_VECTOR 	(1 downto 0);
 			  MOVE_OUT_RIGHT		: OUT  STD_LOGIC_VECTOR 	(1 downto 0);
 			  MOVE_OUT_TOP			: OUT  STD_LOGIC_VECTOR 	(1 downto 0);
@@ -85,7 +86,7 @@ constant ones: std_logic_vector((busWidth-1) downto 0) := (others => '1');
 
 signal sigVALUE: std_logic_vector ((busWidth-1) downto 0);
 signal sigVALUE_REG: std_logic_vector ((busWidth-1) downto 0);
-
+signal ISZERO_sig: std_logic;
 
 
 
@@ -464,15 +465,20 @@ end process mergeChecks;
 iszeroProc: process(sigVALUE_REG)
 begin
 if (sigVALUE_REG /= zeroes) then
-ISZERO <= '0';
+ISZERO_SIG <= '0';
 else
-ISZERO <= '1';
+ISZERO_SIG <= '1';
 end if;
 end process iszeroProc;
 
-CANMOVE <= ALLOW_MOVE_FROM_RIGHT or ALLOW_MOVE_FROM_LEFT or ALLOW_MOVE_FROM_TOP or ALLOW_MOVE_FROM_BOTTOM or ALLOW_MERGE_FROM_RIGHT or ALLOW_MERGE_FROM_LEFT or ALLOW_MERGE_FROM_TOP or ALLOW_MERGE_FROM_BOTTOM;
+ISZERO <= ISZERO_SIG;
 
+--CANMOVE <= ALLOW_MOVE_FROM_RIGHT or ALLOW_MOVE_FROM_LEFT or ALLOW_MOVE_FROM_TOP or ALLOW_MOVE_FROM_BOTTOM or ALLOW_MERGE_FROM_RIGHT or ALLOW_MERGE_FROM_LEFT or ALLOW_MERGE_FROM_TOP or ALLOW_MERGE_FROM_BOTTOM;
 
+CANMOVE(3) <= ((not ISZERO_SIG) and ALLOW_MOVE_FROM_RIGHT) or ALLOW_MERGE_FROM_RIGHT; -- output if move legal to left
+CANMOVE(2) <= ((not ISZERO_SIG) and ALLOW_MOVE_FROM_LEFT) or ALLOW_MERGE_FROM_LEFT; -- output if move legal to right
+CANMOVE(1) <= ((not ISZERO_SIG) and ALLOW_MOVE_FROM_BOTTOM) or ALLOW_MERGE_FROM_BOTTOM; -- output if move legal to top
+CANMOVE(0) <= ((not ISZERO_SIG) and ALLOW_MOVE_FROM_TOP) or ALLOW_MERGE_FROM_TOP;  -- output if move legal to bottom
 end Behavioral;
 
 

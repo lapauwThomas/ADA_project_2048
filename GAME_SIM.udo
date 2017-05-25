@@ -11,20 +11,28 @@
 add wave -position insertpoint  \
 sim:/game_sim/Inst_Game_logic/currentState
 
-add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/INITLOC_VECT
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/INITLOC_VECT
+
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/tileValid
+
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/ENABLE_LFSR
+
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/Inst_LFSR/location
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/Inst_LFSR/value_2_4
+
+
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/ISZERO_VECT
 
 add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/tileValid
+sim:/game_sim/Inst_Game_logic/VALIDDIRECTIONS_SIG
 
 add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/ENABLE_LFSR
-
+sim:/game_sim/Inst_Game_logic/ENABLE_READMOVE
 add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/Inst_LFSR/location
-add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/Inst_LFSR/value_2_4
-
-
-add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/ISZERO_VECT
+sim:/game_sim/Inst_Game_logic/EXECUTE

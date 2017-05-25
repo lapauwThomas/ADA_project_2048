@@ -87,7 +87,7 @@ COMPONENT board_4x4
 		RESET : IN std_logic;
 		INITLOC : IN std_logic_vector(15 downto 0);          
 		BOARDIDLE : OUT std_logic;
-		GAMEOVER : out STD_LOGIC;
+		VALIDDIRECTIONS : out STD_LOGIC_vector(3 downto 0);
 		ISZERO_VECT : OUT std_logic_vector(15 downto 0);
 		OUT_VALUE_BL11 : OUT std_logic_vector(11 downto 0);
 		OUT_VALUE_BL12 : OUT std_logic_vector(11 downto 0);
@@ -142,12 +142,19 @@ COMPONENT board_4x4
 	signal DIR_VALID: std_logic;
 	--signal ENABLE_MVGEN:std_logic;
 	signal GAMEOVER_SIG:std_logic;
+	signal VALIDDIRECTIONS_SIG:std_logic_vector(3 downto 0);
 	signal ENABLE_LFSR: std_logic;
 	signal tileValid: std_logic;
 	
 	signal counter : integer :=0;
 	signal counter_enable: std_logic;
 	constant tileLoadCycles: integer := 3;
+	
+	constant dirLeft: std_logic_vector(1 downto 0) := "00";
+constant dirUp: std_logic_vector(1 downto 0) := "01";
+constant dirRight: std_logic_vector(1 downto 0) := "10";
+constant dirDown: std_logic_vector(1 downto 0) := "11";
+
 
 begin
 
@@ -161,7 +168,7 @@ Inst_board_4x4: board_4x4 PORT MAP(
 		BOARDIDLE => BOARDIDLE,
 		INITLOC => INITLOC_VECT,
 		ISZERO_VECT => ISZERO_VECT,
-		GAMEOVER => GAMEOVER_SIG,
+		VALIDDIRECTIONS => VALIDDIRECTIONS_SIG,
 		OUT_VALUE_BL11 => OUT_VALUE_BL11,
 		OUT_VALUE_BL12 => OUT_VALUE_BL12,
 		OUT_VALUE_BL13 => OUT_VALUE_BL13,
@@ -185,9 +192,9 @@ Inst_board_4x4: board_4x4 PORT MAP(
 		--clk => CLK,
 		--reset => reset,
 		--enable => ENABLE_MVGEN,
-		input_character =>input_character ,
 		direction => DIRECTION,
-		valid => DIR_VALID
+		valid => DIR_VALID,
+		input_character => input_character
 	);
 	
 Inst_LFSR: LFSR PORT MAP(
@@ -203,6 +210,7 @@ Inst_LFSR: LFSR PORT MAP(
 	);
 	
 DIROUTPUT <= DIRECTION;
+GAMEOVER_SIG <= not(VALIDDIRECTIONS_SIG(3) or VALIDDIRECTIONS_SIG(2) or VALIDDIRECTIONS_SIG(1) or VALIDDIRECTIONS_SIG(0));
 
 fsmProcess: process(CLK, RESET)
 begin
@@ -223,7 +231,7 @@ end process fsmProcess;
 ---------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------
-fsmStateLogic: process(currentState, tileValid, INITLOC_VECT_LFSR, START, LOAD, DIR_VALID, BOARDIDLE, GAMEOVER_SIG)
+fsmStateLogic: process(currentState, tileValid, INITLOC_VECT_LFSR, START, LOAD, DIR_VALID, BOARDIDLE, GAMEOVER_SIG, DIRECTION, VALIDDIRECTIONS_SIG)
 begin
 
 --Default values for signals
@@ -292,7 +300,23 @@ begin
 			
 			
 		when s_GetMove => --enable 
-			if DIR_VALID = '1' then
+			if ( (DIR_VALID = '1') and (DIRECTION = dirLEFT) and (VALIDDIRECTIONS_SIG(3) ='1')) then
+				
+				ENABLE_READMOVE <= '0'; -- stop reading moves since move is valid
+				EXECUTE <= '1'; -- pulse execute high for one cycle
+				nextState <= s_WaitForIdle; -- go to wait for idle
+			elsif ((DIR_VALID = '1') and (DIRECTION = dirRIGHT) and (VALIDDIRECTIONS_SIG(2)='1')) then
+				
+				ENABLE_READMOVE <= '0'; -- stop reading moves since move is valid
+				EXECUTE <= '1'; -- pulse execute high for one cycle
+				nextState <= s_WaitForIdle; -- go to wait for idle
+			elsif ((DIR_VALID = '1' )and (DIRECTION = dirUP) and (VALIDDIRECTIONS_SIG(1)='1')) then
+				
+				ENABLE_READMOVE <= '0'; -- stop reading moves since move is valid
+				EXECUTE <= '1'; -- pulse execute high for one cycle
+				nextState <= s_WaitForIdle; -- go to wait for idle
+			elsif ((DIR_VALID = '1') and (DIRECTION = dirDOWN) and (VALIDDIRECTIONS_SIG(0)='1')) then
+				
 				ENABLE_READMOVE <= '0'; -- stop reading moves since move is valid
 				EXECUTE <= '1'; -- pulse execute high for one cycle
 				nextState <= s_WaitForIdle; -- go to wait for idle
@@ -342,7 +366,7 @@ begin
 				nextState <= s_GameOver;
 			else 
 				DO_FILEWRITE <= '1';
-								ENABLE_READMOVE <= '1'; --set readmove high to get new move
+				ENABLE_READMOVE <= '1'; --set readmove high to get new move
 				nextState <= s_GetMOVE;
 			end if;
 

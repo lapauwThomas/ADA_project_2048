@@ -1,0 +1,71 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/pa.fromNcd.tcl
+# create_project -name project -dir "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/planAhead_run_1" -part xc3s400fg456-5
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project} }
+# set_property target_constrs_file "Game_logic.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.ucf' to fileset 'constrs_1'
+# add_files [list {Game_logic.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s400fg456-5
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Game_logic.ngc ...
+WARNING:NetListWriters:298 - No output is written to Game_logic.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Game_logic.edif ...
+ngc2edif: Total memory usage is 94572 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/project.data/cache/Game_logic_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/project.data/cache/Game_logic_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'Game_logic' is not ideal for floorplanning, since the cellview 'Game_logic' defined in file 'Game_logic.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/fg456/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/fg456/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/spartan3-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/spartan3-5.lib.
+Parsing UCF File [C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.ucf]
+Finished Parsing UCF File [C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: fcfc37b0
+link_design: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 550.613 ; gain = 124.121
+# read_xdl -file "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '3s400.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "Game_logic" is an NCD, version 3.2, device xc3s400, package fg456, speed -5
+Successfully converted design 'C:\Users\thoma\CloudStation\School\2MA\semester2\ADA\labs\project\Game_logic.ncd' to 'C:\Users\thoma\CloudStation\School\2MA\semester2\ADA\labs\project\Game_logic.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.ncd
+INFO: [Designutils 20-671] Placed 6596 instances
+read_xdl: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 554.406 ; gain = 3.793
+# if {[catch {read_twx -name results_1 -file "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.twx\": $eInfo"
+# }

@@ -38,7 +38,7 @@ entity board_4x4 is
            
            RESET : in  STD_LOGIC;
 			  BOARDIDLE : out STD_LOGIC;  
-			  GAMEOVER : out STD_LOGIC; 
+			  VALIDDIRECTIONS : out STD_LOGIC_vector(3 downto 0); 
 			  
 			  INITLOC : in  STD_LOGIC_VECTOR(15 downto 0);
            ISZERO_VECT : out  STD_LOGIC_VECTOR (15 downto 0);
@@ -84,7 +84,7 @@ COMPONENT tile
          INITVAL : IN  std_logic_vector(11 downto 0);
 			ISZERO : out std_logic;
 			ISIDLE: out std_logic;
-			CANMOVE: out std_logic;
+			CANMOVE: out std_logic_vector(3 downto 0);
 			
          MOVE_OUT_LEFT : OUT  std_logic_vector(1 downto 0);
          MOVE_OUT_RIGHT : OUT  std_logic_vector(1 downto 0);
@@ -193,25 +193,25 @@ signal ISZERO_BL42: std_logic;
 signal ISZERO_BL43: std_logic;
 signal ISZERO_BL44: std_logic;
 
-signal CANMOVE_BL11: std_logic;
-signal CANMOVE_BL12: std_logic;
-signal CANMOVE_BL13: std_logic;
-signal CANMOVE_BL14: std_logic;
+signal CANMOVE_BL11: std_logic_vector(3 downto 0);
+signal CANMOVE_BL12: std_logic_vector(3 downto 0);
+signal CANMOVE_BL13: std_logic_vector(3 downto 0);
+signal CANMOVE_BL14: std_logic_vector(3 downto 0);
 
-signal CANMOVE_BL21: std_logic;
-signal CANMOVE_BL22: std_logic;
-signal CANMOVE_BL23: std_logic;
-signal CANMOVE_BL24: std_logic;
+signal CANMOVE_BL21: std_logic_vector(3 downto 0);
+signal CANMOVE_BL22: std_logic_vector(3 downto 0);
+signal CANMOVE_BL23: std_logic_vector(3 downto 0);
+signal CANMOVE_BL24: std_logic_vector(3 downto 0);
 
-signal CANMOVE_BL31: std_logic;
-signal CANMOVE_BL32: std_logic;
-signal CANMOVE_BL33: std_logic;
-signal CANMOVE_BL34: std_logic;
+signal CANMOVE_BL31: std_logic_vector(3 downto 0);
+signal CANMOVE_BL32: std_logic_vector(3 downto 0);
+signal CANMOVE_BL33: std_logic_vector(3 downto 0);
+signal CANMOVE_BL34: std_logic_vector(3 downto 0);
 
-signal CANMOVE_BL41: std_logic;
-signal CANMOVE_BL42: std_logic;
-signal CANMOVE_BL43: std_logic;
-signal CANMOVE_BL44: std_logic;
+signal CANMOVE_BL41: std_logic_vector(3 downto 0);
+signal CANMOVE_BL42: std_logic_vector(3 downto 0);
+signal CANMOVE_BL43: std_logic_vector(3 downto 0);
+signal CANMOVE_BL44: std_logic_vector(3 downto 0);
 
 
 --move signals between vertical collumns
@@ -273,10 +273,9 @@ signal MV_BL34_BL44:  std_logic_vector(1 downto 0);
 signal MV_BL44_BL34:  std_logic_vector(1 downto 0);
 
 
-SIGNAL GAMEOVER_SIG:STD_LOGIC;
 
 
-
+signal validDirections_sig: std_logic_vector(3 downto 0);
 
 begin
 
@@ -326,9 +325,10 @@ begin
   ISZERO_VECT <= ISZERO_BL44 & ISZERO_BL43 & ISZERO_BL42 & ISZERO_BL41 & ISZERO_BL34 & ISZERO_BL33 & ISZERO_BL32 & ISZERO_BL31 & ISZERO_BL24 & ISZERO_BL23 & ISZERO_BL22 & ISZERO_BL21 & ISZERO_BL14 & ISZERO_BL13 & ISZERO_BL12 & ISZERO_BL11; 
 
 	BOARDIDLE <= IDLE_BL11 and IDLE_BL12 and IDLE_BL13 and IDLE_BL14 and IDLE_BL21 and IDLE_BL22 and IDLE_BL23 and IDLE_BL24 and IDLE_BL31 and IDLE_BL32 and IDLE_BL33 and IDLE_BL34 and IDLE_BL41 and IDLE_BL42 and IDLE_BL43 and IDLE_BL44;
-	GAMEOVER_SIG <= not( CANMOVE_BL11 or CANMOVE_BL12 or CANMOVE_BL13 or CANMOVE_BL14 or CANMOVE_BL21 or CANMOVE_BL22 or CANMOVE_BL23 or CANMOVE_BL24 or CANMOVE_BL31 or CANMOVE_BL32 or CANMOVE_BL33 or CANMOVE_BL34 or CANMOVE_BL41 or CANMOVE_BL42 or CANMOVE_BL43 or CANMOVE_BL44);
-	GAMEOVER <= GAMEOVER_SIG;
+
 	
+	validDirections_sig <= (CANMOVE_BL11 or CANMOVE_BL12 or CANMOVE_BL13 or CANMOVE_BL14 or CANMOVE_BL21 or CANMOVE_BL22 or CANMOVE_BL23 or CANMOVE_BL24 or CANMOVE_BL31 or CANMOVE_BL32 or CANMOVE_BL33 or CANMOVE_BL34 or CANMOVE_BL41 or CANMOVE_BL42 or CANMOVE_BL43 or CANMOVE_BL44);
+	VALIDDIRECTIONS <= validDirections_sig;
 	
 BL11: tile PORT MAP (
 CLK => CLK,
@@ -697,7 +697,7 @@ MOVE_IN_RIGHT => WALL_MOVE,
 MOVE_IN_TOP => MV_BL24_BL34,
 MOVE_IN_BOTTOM => MV_BL44_BL34,
 
-LEFT_TILE => VALUE_BL23,
+LEFT_TILE => VALUE_BL33,
 RIGHT_TILE => WALL_VAL,
 TOP_TILE => VALUE_BL24,
 BOTTOM_TILE => VALUE_BL44
