@@ -38,6 +38,8 @@ entity Game_logic is
 			  START: IN STD_LOGIC;
 			  LOAD: IN STD_LOGIC;
 			  
+			  DO_FILEWRITE: out std_logic;
+			  
 			  ENABLE_READMOVE: out std_logic;
 			OUT_VALUE_BL11 : OUT std_logic_vector(11 downto 0);
 			OUT_VALUE_BL12 : OUT std_logic_vector(11 downto 0);
@@ -104,6 +106,19 @@ COMPONENT board_4x4
 		
 	END COMPONENT;
 	
+	COMPONENT LFSR
+	PORT(
+		clk : IN std_logic;
+		reset : IN std_logic;
+		enable : IN std_logic;
+		seed : IN std_logic_vector(4 downto 0);
+		zero_tiles : IN std_logic_vector(15 downto 0);          
+		value_2_4 : OUT std_logic_vector(11 downto 0);
+		location : OUT std_logic_vector(15 downto 0);
+		valid : OUT std_logic;
+		output : OUT std_logic_vector(4 downto 0)
+		);
+	END COMPONENT;
 	
 	COMPONENT MOVE_GEN
 	PORT(
@@ -115,6 +130,8 @@ COMPONENT board_4x4
 		valid : OUT std_logic
 		);
 	END COMPONENT;
+	
+	signal INITLOC_VECT_LFSR: std_logic_vector(15 downto 0);
 	
 	SIGNAL DIRECTION: std_logic_vector(1 downto 0);
 	signal EXECUTE: std_logic;
@@ -163,7 +180,18 @@ Inst_board_4x4: board_4x4 PORT MAP(
 		direction => DIRECTION,
 		valid => DIR_VALID
 	);
-
+	
+Inst_LFSR: LFSR PORT MAP(
+		clk => CLK,
+		reset => RESET,
+		enable => ENABLE_LFSR,
+		seed => "01101",
+		zero_tiles => ISZERO_VECT,
+		value_2_4 => INITVAL,
+		location => INITLOC_VECT_LFSR,
+		valid => tileValid,
+		output => open
+	);
 
 fsmProcess: process(CLK, RESET)
 begin
@@ -189,6 +217,7 @@ begin
 	ENABLE_READMOVE <= '0';
 	INITLOC_VECT <= (others => '0');
 	ENABLE_LFSR <= '0';
+	DO_FILEWRITE <='0';
 	
 	case currentState is
 		
@@ -261,6 +290,7 @@ begin
 				INITLOC_VECT <= INITLOC_VECT_LFSR;
 				nextState <= s_GetMOVE;
 				ENABLE_READMOVE <= '1'; --set readmove high to get new move
+				DO_FILEWRITE <= '1';
 			else
 				ENABLE_LFSR <= '1';
 				nextState <= s_randomTile;
