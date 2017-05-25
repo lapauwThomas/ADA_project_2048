@@ -1,9 +1,9 @@
 # Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
-# do {FileIO.fdo}
+# do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:46:26 on May 24,2017
+# Start time: 14:51:40 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -11,235 +11,88 @@
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 17:46:26 on May 24,2017, Elapsed time: 0:00:00
+# End time: 14:51:40 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:46:26 on May 24,2017
+# Start time: 14:51:40 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 14:51:40 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:51:40 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 14:51:40 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:51:40 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 17:46:26 on May 24,2017, Elapsed time: 0:00:00
+# End time: 14:51:41 on May 25,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:46:27 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 14:51:41 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 14:51:41 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:51:41 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Error: FileIO.vhd(175): (vcom-1136) Unknown identifier "INITVAL".
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Error: GAME_SIM_TB.vhd(141): near ":": (vcom-1576) expecting ';'.
 # 
-# ** Error: FileIO.vhd(177): (vcom-1136) Unknown identifier "EXECUTE".
+# ** Error: GAME_SIM_TB.vhd(210): (vcom-1136) Unknown identifier "ENABLE_READMOVE".
 # 
-# ** Error: FileIO.vhd(179): (vcom-1136) Unknown identifier "INITLOC".
+# ** Error: GAME_SIM_TB.vhd(211): (vcom-1136) Unknown identifier "DO_FILEWRITE".
 # 
-# ** Warning: FileIO.vhd(407): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Error: GAME_SIM_TB.vhd(211): (vcom-1136) Unknown identifier "doFileWrite".
 # 
-# ** Error: FileIO.vhd(529): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(529): (vcom-1136) Unknown identifier "INITVAL".
+# ** Error: GAME_SIM_TB.vhd(211): near ";": (vcom-1576) expecting ',' or ')'.
 # 
-# ** Error: FileIO.vhd(531): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(531): (vcom-1136) Unknown identifier "INITLOC".
+# ** Warning: GAME_SIM_TB.vhd(330): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# ** Error: FileIO.vhd(533): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(533): (vcom-1136) Unknown identifier "INITLOC".
+# ** Warning: GAME_SIM_TB.vhd(407): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# ** Error: FileIO.vhd(542): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(542): (vcom-1136) Unknown identifier "INITVAL".
+# ** Error: GAME_SIM_TB.vhd(434): (vcom-1136) Unknown identifier "doFileWrite".
 # 
-# ** Error: FileIO.vhd(544): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(544): (vcom-1136) Unknown identifier "INITLOC".
-# 
-# ** Error: FileIO.vhd(546): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(546): (vcom-1136) Unknown identifier "INITLOC".
-# 
-# ** Error: FileIO.vhd(556): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(556): (vcom-1136) Unknown identifier "INITVAL".
-# 
-# ** Error: FileIO.vhd(558): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(558): (vcom-1136) Unknown identifier "INITLOC".
-# 
-# ** Error: FileIO.vhd(560): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(560): (vcom-1136) Unknown identifier "INITLOC".
-# 
-# ** Error: FileIO.vhd(571): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(573): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(573): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(575): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(575): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(595): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(597): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(597): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(599): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(599): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(618): (vcom-1136) Unknown identifier "dirUP".
-# 
-# ** Error: FileIO.vhd(620): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(620): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(622): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(622): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(633): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(635): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(635): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(637): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(637): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(648): (vcom-1136) Unknown identifier "dirDOWN".
-# 
-# ** Error: FileIO.vhd(650): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(650): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(652): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(652): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(663): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(665): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(665): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(667): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(667): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(678): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(680): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(680): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(682): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(682): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(693): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(695): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(695): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(697): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(697): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(708): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(710): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(710): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(712): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(712): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(723): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(725): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(725): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(727): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(727): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(746): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(748): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(748): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(750): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(750): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(761): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(763): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(763): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(765): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(765): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(776): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(778): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(778): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(780): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(780): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(791): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(793): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(793): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(795): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(795): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(806): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(808): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(808): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(810): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(810): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(829): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(831): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(831): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(833): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(833): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(844): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(846): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(846): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(848): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(848): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(859): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(861): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(861): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(863): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(863): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(874): (vcom-1136) Unknown identifier "dirLEFT".
-# 
-# ** Error: FileIO.vhd(876): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(876): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(878): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(878): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(889): (vcom-1136) Unknown identifier "dirRIGHT".
-# 
-# ** Error: FileIO.vhd(891): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(891): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(893): Illegal target for signal assignment.
-# ** Error: FileIO.vhd(893): (vcom-1136) Unknown identifier "EXECUTE".
-# 
-# ** Error: FileIO.vhd(924): VHDL Compiler exiting
-# End time: 17:46:27 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 122, Warnings: 1
+# ** Error: GAME_SIM_TB.vhd(434): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: GAME_SIM_TB.vhd(980): VHDL Compiler exiting
+# End time: 14:51:41 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 2
 # ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
-# Error in macro ./FileIO.fdo line 25
+# Error in macro ./GAME_SIM.fdo line 28
 # C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
 #     while executing
-# "vcom -explicit  -93 "FileIO.vhd""
-do {FileIO.fdo}
+# "vcom -explicit  -93 "GAME_SIM_TB.vhd""
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:47:22 on May 24,2017
+# Start time: 14:52:59 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -247,31 +100,228 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 17:47:22 on May 24,2017, Elapsed time: 0:00:00
+# End time: 14:52:59 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:47:22 on May 24,2017
+# Start time: 14:52:59 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 14:53:00 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:00 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 14:53:00 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:00 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 17:47:22 on May 24,2017, Elapsed time: 0:00:00
+# End time: 14:53:00 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:47:23 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 14:53:00 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 14:53:00 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:00 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Error: GAME_SIM_TB.vhd(210): (vcom-1136) Unknown identifier "ENABLE_READMOVE".
 # 
-# End time: 17:47:23 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Error: GAME_SIM_TB.vhd(211): (vcom-1136) Unknown identifier "DO_FILEWRITE".
+# 
+# ** Error: GAME_SIM_TB.vhd(211): near ";": (vcom-1576) expecting ',' or ')'.
+# 
+# ** Warning: GAME_SIM_TB.vhd(330): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(407): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Error: GAME_SIM_TB.vhd(980): VHDL Compiler exiting
+# End time: 14:53:00 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 2
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./GAME_SIM.fdo line 28
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "GAME_SIM_TB.vhd""
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 14:53:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 14:53:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 14:53:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 14:53:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 14:53:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Error: GAME_SIM_TB.vhd(210): (vcom-1136) Unknown identifier "ENABLE_READMOVE".
+# 
+# ** Error: GAME_SIM_TB.vhd(211): (vcom-1136) Unknown identifier "DO_FILEWRITE".
+# 
+# ** Error: GAME_SIM_TB.vhd(210): (vcom-1023) Positional association (infix expression) found after named association.
+# 
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Error: GAME_SIM_TB.vhd(981): VHDL Compiler exiting
+# End time: 14:53:23 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 2
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./GAME_SIM.fdo line 28
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "GAME_SIM_TB.vhd""
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:54 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 14:53:54 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:54 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 14:53:54 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:54 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 14:53:54 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:55 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 14:53:55 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:55 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 14:53:55 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:53:55 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 14:53:55 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # //  ModelSim PE Student Edition 10.4a Apr  7 2015 
 # //
 # //  Copyright 1991-2015 Mentor Graphics Corporation
@@ -290,273 +340,28 @@ do {FileIO.fdo}
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui -do "do {FileIO.fdo}" 
-# Start time: 17:47:23 on May 24,2017
+# vsim -gui -do "do {GAME_SIM.fdo}" 
+# Start time: 14:53:55 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# ** Warning: Design size of 10005 statements or 21 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 212 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 214 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 216 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 218 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 370 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 372 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 374 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 376 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 378 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 380 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 382 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 384 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 386 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 388 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 530 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 532 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 534 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 536 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 538 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 680 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 682 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 684 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 686 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 688 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 840 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 842 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 844 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 846 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 848 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1 us  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1002 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1004 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1006 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1008 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1160 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1162 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1164 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1166 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1168 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1320 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1322 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1324 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1326 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1328 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1480 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1482 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1484 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1486 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1488 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1640 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1642 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1644 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1646 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1648 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1800 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1802 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1804 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1806 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1808 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1960 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1962 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1964 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1966 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1968 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2120 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2122 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2124 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2126 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2128 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2280 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2282 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2284 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2286 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2288 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2440 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2442 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2444 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2446 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2448 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2600 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2602 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2604 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2606 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2608 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2760 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2762 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2764 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2766 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2768 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2920 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2922 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2924 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2926 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2928 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3080 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3082 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3084 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3086 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3088 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3240 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3242 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3244 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3246 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3248 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3400 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3402 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3404 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3406 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3408 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3560 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3562 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3564 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3566 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3568 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3720 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3722 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3724 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3726 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3728 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3880 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3882 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3884 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3886 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3888 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:49:31 on May 24,2017
+# Start time: 14:55:44 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -564,298 +369,87 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 17:49:32 on May 24,2017, Elapsed time: 0:00:01
+# End time: 14:55:44 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:49:32 on May 24,2017
+# Start time: 14:55:44 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 14:55:45 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:55:45 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 14:55:45 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:55:45 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 17:49:32 on May 24,2017, Elapsed time: 0:00:00
+# End time: 14:55:45 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:49:32 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 14:55:45 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 14:55:45 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 14:55:45 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 17:49:32 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 14:55:45 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 17:49:33 on May 24,2017
+# Start time: 14:55:47 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 212 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 214 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 216 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 218 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 370 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 372 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 374 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 376 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 378 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 380 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 382 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 384 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 386 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 388 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 530 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 532 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 534 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 536 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 538 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 680 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 682 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 684 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 686 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 688 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 840 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 842 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 844 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 846 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 848 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1 us  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1002 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1004 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1006 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1008 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1160 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1162 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1164 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1166 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1168 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1320 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1322 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1324 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1326 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1328 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1480 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1482 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1484 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1486 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1488 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1640 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1642 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1644 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1646 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1648 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1800 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1802 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1804 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1806 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1808 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1960 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1962 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1964 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1966 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1968 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2120 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2122 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2124 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2126 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2128 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2280 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2282 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2284 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2286 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2288 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2440 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2442 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2444 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2446 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2448 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2600 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2602 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2604 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2606 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2608 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2760 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2762 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2764 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2766 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2768 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2920 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2922 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2924 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2926 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2928 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3080 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3082 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3084 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3086 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3088 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3240 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3242 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3244 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3246 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3248 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3400 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3402 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3404 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3406 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3408 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3560 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3562 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3564 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3566 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3568 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3720 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3722 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3724 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3726 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3728 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3880 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3882 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3884 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3886 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3888 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/currentState
+restart -f; run 100us -all
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:50:08 on May 24,2017
+# Start time: 15:01:38 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -863,98 +457,120 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 17:50:08 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:01:38 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:50:08 on May 24,2017
+# Start time: 15:01:38 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:01:38 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:01:38 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:01:39 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:01:39 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 17:50:08 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:01:39 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:50:08 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:01:39 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:01:39 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:01:39 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 17:50:08 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:01:39 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 17:50:10 on May 24,2017
+# Start time: 15:01:41 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 100 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 370 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_LFSR/location
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_LFSR/value_2_4
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 380 ns  Iteration: 1  Instance: /fileio
+#    Time: 100 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 530 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/ENABLE_LFSR
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/ENABLE_LFSR
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 680 ns  Iteration: 1  Instance: /fileio
+#    Time: 100 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 840 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/tileValid
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 1 us  Iteration: 1  Instance: /fileio
+#    Time: 100 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1160 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/INITLOC_VECT
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 1320 ns  Iteration: 1  Instance: /fileio
+#    Time: 100 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1480 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1640 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1800 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1960 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2120 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2280 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2440 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2600 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2760 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2920 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3080 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3240 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3400 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3560 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3720 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3880 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:52:16 on May 24,2017
+# Start time: 15:16:23 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -962,98 +578,91 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 17:52:16 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:16:23 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:52:17 on May 24,2017
+# Start time: 15:16:23 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:16:23 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:16:23 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:16:23 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:16:23 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 17:52:17 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:16:24 on May 25,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:52:17 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:16:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:16:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:16:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 17:52:17 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:16:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 17:52:18 on May 24,2017
+# Start time: 15:16:26 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 210 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/ISZERO_VECT
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 370 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 380 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 530 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 680 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 840 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1 us  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1160 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1320 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1480 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1640 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1800 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1960 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2120 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2280 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2440 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2600 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2760 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2920 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3080 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3240 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3400 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3560 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3720 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3880 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 210 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:56:04 on May 24,2017
+# Start time: 15:24:23 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1061,50 +670,414 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 17:56:04 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:24:23 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:56:04 on May 24,2017
+# Start time: 15:24:23 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:24:24 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:24:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:24 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 17:56:04 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:24:24 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:56:05 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:24:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:24:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:24:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# ** Error: FileIO.vhd(453): (vcom-1136) Unknown identifier "line_var".
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# ** Error: FileIO.vhd(454): (vcom-1136) Unknown identifier "line_var".
+# End time: 15:24:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 15:24:26 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 210 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
 # 
-# ** Error: FileIO.vhd(455): (vcom-1136) Unknown identifier "text_var".
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:37:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 15:37:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:37:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:37:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:37:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:37:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:37:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 15:37:24 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:37:24 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:37:25 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:37:25 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# ** Error: FileIO.vhd(455): (vcom-1136) Unknown identifier "line_var".
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# ** Error: FileIO.vhd(939): VHDL Compiler exiting
-# End time: 17:56:05 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 1
+# End time: 15:37:25 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 15:37:26 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 160 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:38:55 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 15:38:55 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:38:55 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:38:56 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:38:56 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:38:56 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:38:56 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 15:38:56 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:38:56 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:38:56 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:38:56 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:38:56 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 15:38:58 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:39:50 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 15:39:50 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:39:50 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:39:50 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:39:50 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:39:51 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:39:51 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 15:39:51 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:39:51 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:39:51 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:39:51 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:39:51 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim 
+# Start time: 15:39:52 on May 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
+# Loading work.board_4x4(behavioral)
+# Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Writing in file
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:13 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 tile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity tile
+# -- Compiling architecture Behavioral of tile
+# End time: 15:44:14 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:14 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:44:14 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:14 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:44:14 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:14 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity board_4x4
+# -- Compiling architecture Behavioral of board_4x4
+# End time: 15:44:14 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:14 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# ** Error: Game_logic.vhd(320): (vcom-1136) Unknown identifier "s_waitForLoad_randomTile".
+# 
+# ** Error: Game_logic.vhd(328): (vcom-1136) Unknown identifier "s_waitForLoad_randomTile".
+# 
+# ** Error (suppressible): Game_logic.vhd(328): (vcom-1937) Choice in CASE statement alternative must be locally static.
+# 
+# ** Error: Game_logic.vhd(331): (vcom-1136) Unknown identifier "s_waitForLoad_randomTile".
+# 
+# ** Error: Game_logic.vhd(363): VHDL Compiler exiting
+# End time: 15:44:14 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
 # ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
-# Error in macro ./FileIO.fdo line 25
+# Error in macro ./GAME_SIM.fdo line 27
 # C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
 #     while executing
-# "vcom -explicit  -93 "FileIO.vhd""
-do {FileIO.fdo}
+# "vcom -explicit  -93 "Game_logic.vhd""
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:56:31 on May 24,2017
+# Start time: 15:44:37 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1112,98 +1085,88 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 17:56:31 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:44:37 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:56:31 on May 24,2017
+# Start time: 15:44:37 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:44:38 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:38 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:44:38 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:38 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 17:56:31 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:44:38 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 17:56:31 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:44:38 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:44:38 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:44:38 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(331): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 17:56:31 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(408): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:44:38 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 17:56:32 on May 24,2017
+# Start time: 15:44:40 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 370 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 380 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 530 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 680 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 840 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1 us  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1160 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1320 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1480 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1640 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1800 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1960 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2120 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2280 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2440 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2600 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2760 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2920 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3080 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3240 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3400 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3560 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3720 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3880 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:06:53 on May 24,2017
+# Start time: 15:48:57 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1211,96 +1174,91 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 18:06:54 on May 24,2017, Elapsed time: 0:00:01
+# End time: 15:48:57 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:06:54 on May 24,2017
+# Start time: 15:48:57 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:48:57 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:48:57 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:48:57 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:48:57 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 18:06:54 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:48:57 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:06:54 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:48:57 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:48:57 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:48:57 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 18:06:54 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(409): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:48:57 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 18:06:55 on May 24,2017
+# Start time: 15:48:59 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /game_sim/Inst_Game_logic/DIROUTPUT(1 downto 0) has no driver.
+# 
+# This port will contribute value (2'hX) to the signal network.
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 360 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 510 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 660 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 820 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 980 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1140 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1300 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1460 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1620 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1780 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1940 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2100 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2260 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2420 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2580 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2740 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2900 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3060 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3220 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3380 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3540 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3700 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3860 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:16:44 on May 24,2017
+# Start time: 15:52:09 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1308,98 +1266,97 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 18:16:44 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:52:09 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:16:44 on May 24,2017
+# Start time: 15:52:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:52:10 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:52:10 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:52:10 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:52:10 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 18:16:44 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:52:10 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:16:44 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:52:10 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:52:10 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:52:10 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 18:16:44 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:52:10 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 18:16:46 on May 24,2017
+# Start time: 15:52:12 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /game_sim/Inst_Game_logic/DIROUTPUT(1 downto 0) has no driver.
+# 
+# This port will contribute value (2'hX) to the signal network.
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
+# ** Note: reading new character
+#    Time: 165 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 360 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 510 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 660 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 810 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 970 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1130 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1290 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1450 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1610 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1770 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1930 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2090 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2250 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2410 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2570 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2730 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2890 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3050 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3210 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3370 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3530 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3690 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3850 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 4010 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:30:17 on May 24,2017
+# Start time: 15:54:19 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1407,104 +1364,94 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 18:30:17 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:54:19 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:30:17 on May 24,2017
+# Start time: 15:54:19 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:54:19 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:54:19 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:54:19 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:54:19 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 18:30:17 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:54:19 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:30:17 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:54:19 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:54:20 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:54:20 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 18:30:17 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:54:20 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 18:30:19 on May 24,2017
+# Start time: 15:54:21 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 185 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 360 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 510 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 660 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 810 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 970 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1130 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1280 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1440 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1600 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1750 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1910 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2070 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2220 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2380 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2540 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2700 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2860 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3020 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3180 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3340 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3500 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3660 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3820 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3980 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 4140 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 4300 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 4460 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:32:20 on May 24,2017
+# Start time: 15:55:20 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1512,104 +1459,142 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 18:32:20 on May 24,2017, Elapsed time: 0:00:00
+# End time: 15:55:20 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:32:20 on May 24,2017
+# Start time: 15:55:21 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 15:55:21 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:55:21 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 15:55:21 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:55:21 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 18:32:21 on May 24,2017, Elapsed time: 0:00:01
+# End time: 15:55:21 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:32:21 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 15:55:21 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 15:55:21 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:55:21 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 18:32:21 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 15:55:21 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 18:32:22 on May 24,2017
+# Start time: 15:55:23 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 360 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MERGE_FROM_BOTTOM \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MERGE_FROM_LEFT \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MERGE_FROM_RIGHT \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MERGE_FROM_TOP \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MOVE_FROM_BOTTOM \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MOVE_FROM_LEFT \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MOVE_FROM_RIGHT \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/ALLOW_MOVE_FROM_TOP
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 510 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 660 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/GAMEOVER_SIG
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/GAMEOVER_SIG
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 810 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 970 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL11/CANMOVE
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL14/CANMOVE
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL22/CANMOVE
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL32/CANMOVE
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/Inst_board_4x4/BL44/CANMOVE
+restart -f; run 100us -all
 # ** Note: Writing in file
-#    Time: 1130 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1280 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1440 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1600 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1750 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 1910 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2070 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2220 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2380 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2540 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2700 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 2860 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3020 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3180 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3340 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3500 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3660 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3820 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 3980 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 4140 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 4300 ns  Iteration: 1  Instance: /fileio
-# ** Note: Writing in file
-#    Time: 4460 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:43:29 on May 24,2017
+# Start time: 16:03:08 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1617,104 +1602,208 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 18:43:29 on May 24,2017, Elapsed time: 0:00:00
+# End time: 16:03:08 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:43:29 on May 24,2017
+# Start time: 16:03:08 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 16:03:09 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:03:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 16:03:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:03:09 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 18:43:30 on May 24,2017, Elapsed time: 0:00:01
+# End time: 16:03:09 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 18:43:30 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 16:03:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 16:03:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:03:09 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 18:43:30 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 16:03:09 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 18:43:31 on May 24,2017
+# Start time: 16:03:11 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 360 ns  Iteration: 1  Instance: /fileio
+#    Time: 300 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 510 ns  Iteration: 1  Instance: /fileio
+#    Time: 410 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 660 ns  Iteration: 1  Instance: /fileio
+#    Time: 520 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 810 ns  Iteration: 1  Instance: /fileio
+#    Time: 630 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 635 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 970 ns  Iteration: 1  Instance: /fileio
+#    Time: 740 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 745 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1130 ns  Iteration: 1  Instance: /fileio
+#    Time: 850 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 855 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1280 ns  Iteration: 1  Instance: /fileio
+#    Time: 960 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 965 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1440 ns  Iteration: 1  Instance: /fileio
+#    Time: 1070 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1075 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1600 ns  Iteration: 1  Instance: /fileio
+#    Time: 1180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1185 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1750 ns  Iteration: 1  Instance: /fileio
+#    Time: 1290 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1295 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1910 ns  Iteration: 1  Instance: /fileio
+#    Time: 1400 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1405 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2070 ns  Iteration: 1  Instance: /fileio
+#    Time: 1510 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1515 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2220 ns  Iteration: 1  Instance: /fileio
+#    Time: 1630 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1635 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2380 ns  Iteration: 1  Instance: /fileio
+#    Time: 1740 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1745 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1805 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2540 ns  Iteration: 1  Instance: /fileio
+#    Time: 1880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1885 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2700 ns  Iteration: 1  Instance: /fileio
+#    Time: 1990 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2860 ns  Iteration: 1  Instance: /fileio
+#    Time: 2100 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3020 ns  Iteration: 1  Instance: /fileio
+#    Time: 2210 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3180 ns  Iteration: 1  Instance: /fileio
+#    Time: 2380 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3340 ns  Iteration: 1  Instance: /fileio
+#    Time: 2490 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3500 ns  Iteration: 1  Instance: /fileio
+#    Time: 2610 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3660 ns  Iteration: 1  Instance: /fileio
+#    Time: 2730 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3820 ns  Iteration: 1  Instance: /fileio
+#    Time: 2840 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3980 ns  Iteration: 1  Instance: /fileio
+#    Time: 2980 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4140 ns  Iteration: 1  Instance: /fileio
+#    Time: 3090 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4300 ns  Iteration: 1  Instance: /fileio
+#    Time: 3200 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4460 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 3310 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3430 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3540 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3650 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3840 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3960 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4320 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4560 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4720 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5350 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5590 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5750 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5910 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6380 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6620 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:08:50 on May 24,2017
+# Start time: 16:06:22 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1722,104 +1811,208 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 20:08:50 on May 24,2017, Elapsed time: 0:00:00
+# End time: 16:06:22 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:08:50 on May 24,2017
+# Start time: 16:06:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 16:06:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:06:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 16:06:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:06:22 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 20:08:50 on May 24,2017, Elapsed time: 0:00:00
+# End time: 16:06:22 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:08:50 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 16:06:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 16:06:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:06:22 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 20:08:50 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 16:06:22 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 20:08:52 on May 24,2017
+# Start time: 16:06:24 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 305 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 360 ns  Iteration: 1  Instance: /fileio
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 415 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 510 ns  Iteration: 1  Instance: /fileio
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 525 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 660 ns  Iteration: 1  Instance: /fileio
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 635 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 810 ns  Iteration: 1  Instance: /fileio
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 745 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 970 ns  Iteration: 1  Instance: /fileio
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 855 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1130 ns  Iteration: 1  Instance: /fileio
+#    Time: 880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 965 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1280 ns  Iteration: 1  Instance: /fileio
+#    Time: 990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1075 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1440 ns  Iteration: 1  Instance: /fileio
+#    Time: 1100 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1185 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1600 ns  Iteration: 1  Instance: /fileio
+#    Time: 1210 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1295 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1750 ns  Iteration: 1  Instance: /fileio
+#    Time: 1320 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1405 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1910 ns  Iteration: 1  Instance: /fileio
+#    Time: 1430 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1515 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2070 ns  Iteration: 1  Instance: /fileio
+#    Time: 1540 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1635 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2220 ns  Iteration: 1  Instance: /fileio
+#    Time: 1660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1745 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2380 ns  Iteration: 1  Instance: /fileio
+#    Time: 1770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1805 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1885 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2540 ns  Iteration: 1  Instance: /fileio
+#    Time: 1910 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2700 ns  Iteration: 1  Instance: /fileio
+#    Time: 2020 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2860 ns  Iteration: 1  Instance: /fileio
+#    Time: 2130 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3020 ns  Iteration: 1  Instance: /fileio
+#    Time: 2240 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3180 ns  Iteration: 1  Instance: /fileio
+#    Time: 2410 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3340 ns  Iteration: 1  Instance: /fileio
+#    Time: 2520 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3500 ns  Iteration: 1  Instance: /fileio
+#    Time: 2640 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3660 ns  Iteration: 1  Instance: /fileio
+#    Time: 2760 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3820 ns  Iteration: 1  Instance: /fileio
+#    Time: 2870 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3980 ns  Iteration: 1  Instance: /fileio
+#    Time: 3010 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4140 ns  Iteration: 1  Instance: /fileio
+#    Time: 3120 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4300 ns  Iteration: 1  Instance: /fileio
+#    Time: 3230 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4460 ns  Iteration: 1  Instance: /fileio
-do {FileIO.fdo}
+#    Time: 3340 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3460 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3570 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3870 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4350 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4590 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4750 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4910 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5380 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5620 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5780 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5940 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6410 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6650 ns  Iteration: 1  Instance: /game_sim
+do {GAME_SIM.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:09:50 on May 24,2017
+# Start time: 16:08:35 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 tile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1827,98 +2020,200 @@ do {FileIO.fdo}
 # -- Loading package std_logic_arith
 # -- Compiling entity tile
 # -- Compiling architecture Behavioral of tile
-# End time: 20:09:51 on May 24,2017, Elapsed time: 0:00:01
+# End time: 16:08:35 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:09:51 on May 24,2017
+# Start time: 16:08:35 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 MOVE_GEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MOVE_GEN
+# -- Compiling architecture Behavioral of MOVE_GEN
+# End time: 16:08:35 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:08:35 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 LFSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture Behavioral of LFSR
+# End time: 16:08:36 on May 25,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:08:36 on May 25,2017
 # vcom -reportprogress 300 -explicit -93 board_4x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity board_4x4
 # -- Compiling architecture Behavioral of board_4x4
-# End time: 20:09:51 on May 24,2017, Elapsed time: 0:00:00
+# End time: 16:08:36 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:09:51 on May 24,2017
-# vcom -reportprogress 300 -explicit -93 FileIO.vhd 
+# Start time: 16:08:36 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 Game_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Game_logic
+# -- Compiling architecture Behavioral of Game_logic
+# End time: 16:08:36 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:08:36 on May 25,2017
+# vcom -reportprogress 300 -explicit -93 GAME_SIM_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity FileIO
-# -- Compiling architecture Behavioral of FileIO
-# ** Warning: FileIO.vhd(419): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# -- Compiling entity GAME_SIM
+# -- Compiling architecture Behavioral of GAME_SIM
+# ** Warning: GAME_SIM_TB.vhd(332): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 # 
-# End time: 20:09:51 on May 24,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# ** Warning: GAME_SIM_TB.vhd(410): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# End time: 16:08:36 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim 
-# Start time: 20:09:52 on May 24,2017
+# Start time: 16:08:38 on May 25,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.fileio(behavioral)
+# Loading work.game_sim(behavioral)
+# Loading work.game_logic(behavioral)
 # Loading work.board_4x4(behavioral)
 # Loading work.tile(behavioral)
+# Loading work.move_gen(behavioral)
+# Loading work.lfsr(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: Writing in file
-#    Time: 210 ns  Iteration: 1  Instance: /fileio
+#    Time: 180 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 225 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 360 ns  Iteration: 1  Instance: /fileio
+#    Time: 330 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 335 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 510 ns  Iteration: 1  Instance: /fileio
+#    Time: 440 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 445 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 660 ns  Iteration: 1  Instance: /fileio
+#    Time: 550 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 555 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 810 ns  Iteration: 1  Instance: /fileio
+#    Time: 660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 665 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 970 ns  Iteration: 1  Instance: /fileio
+#    Time: 770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 775 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1130 ns  Iteration: 1  Instance: /fileio
+#    Time: 880 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 885 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1280 ns  Iteration: 1  Instance: /fileio
+#    Time: 990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 995 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1440 ns  Iteration: 1  Instance: /fileio
+#    Time: 1100 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1105 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1600 ns  Iteration: 1  Instance: /fileio
+#    Time: 1210 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1215 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1750 ns  Iteration: 1  Instance: /fileio
+#    Time: 1320 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1325 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 1910 ns  Iteration: 1  Instance: /fileio
+#    Time: 1430 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1435 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2070 ns  Iteration: 1  Instance: /fileio
+#    Time: 1540 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1545 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2220 ns  Iteration: 1  Instance: /fileio
+#    Time: 1660 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1665 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2380 ns  Iteration: 1  Instance: /fileio
+#    Time: 1770 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1775 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1785 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1795 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1805 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2540 ns  Iteration: 1  Instance: /fileio
+#    Time: 1910 ns  Iteration: 1  Instance: /game_sim
+# ** Note: reading new character
+#    Time: 1915 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2700 ns  Iteration: 1  Instance: /fileio
+#    Time: 2020 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 2860 ns  Iteration: 1  Instance: /fileio
+#    Time: 2130 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3020 ns  Iteration: 1  Instance: /fileio
+#    Time: 2240 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3180 ns  Iteration: 1  Instance: /fileio
+#    Time: 2410 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3340 ns  Iteration: 1  Instance: /fileio
+#    Time: 2520 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3500 ns  Iteration: 1  Instance: /fileio
+#    Time: 2640 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3660 ns  Iteration: 1  Instance: /fileio
+#    Time: 2760 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3820 ns  Iteration: 1  Instance: /fileio
+#    Time: 2870 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 3980 ns  Iteration: 1  Instance: /fileio
+#    Time: 3010 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4140 ns  Iteration: 1  Instance: /fileio
+#    Time: 3120 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4300 ns  Iteration: 1  Instance: /fileio
+#    Time: 3230 ns  Iteration: 1  Instance: /game_sim
 # ** Note: Writing in file
-#    Time: 4460 ns  Iteration: 1  Instance: /fileio
-# End time: 20:54:57 on May 24,2017, Elapsed time: 0:45:05
-# Errors: 0, Warnings: 0
+#    Time: 3340 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3460 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3570 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3680 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3870 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 3990 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4350 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4590 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4750 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 4910 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5380 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5620 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5780 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 5940 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6410 ns  Iteration: 1  Instance: /game_sim
+# ** Note: Writing in file
+#    Time: 6650 ns  Iteration: 1  Instance: /game_sim

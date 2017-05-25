@@ -41,6 +41,9 @@ entity Game_logic is
 			  DO_FILEWRITE: out std_logic;
 			  
 			  ENABLE_READMOVE: out std_logic;
+			  
+			  DIROUTPUT: out STD_LOGIC_VECTOR(1 downto 0);
+			  
 			OUT_VALUE_BL11 : OUT std_logic_vector(11 downto 0);
 			OUT_VALUE_BL12 : OUT std_logic_vector(11 downto 0);
 			OUT_VALUE_BL13 : OUT std_logic_vector(11 downto 0);
@@ -64,10 +67,10 @@ end Game_logic;
 
 	
 architecture Behavioral of Game_logic is
-type state_type is (s_Reset, s_LoadBoard, s_GenerateBoard_tile1, s_GenerateBoard_tile2, s_WaitForStart, s_GetMove, s_Execute, s_waitForIdle, s_randomTile, s_gameOver);
+type state_type is (s_Reset, s_LoadBoard, s_GenerateBoard_tile1,s_checkGameover,s_waitForLoad_randomTile, s_waitForLoad_tile1, s_waitForLoad_tile2, s_GenerateBoard_tile2, s_WaitForStart, s_GetMove, s_Execute, s_waitForIdle, s_randomTile, s_gameOver);
 
 signal currentState:state_type := s_Reset;
-signal nextState: state_type := s_GenerateBoard;
+signal nextState: state_type;
 
 signal ISZERO_VECT : std_logic_vector(15 downto 0);
 
@@ -111,12 +114,12 @@ COMPONENT board_4x4
 		clk : IN std_logic;
 		reset : IN std_logic;
 		enable : IN std_logic;
-		seed : IN std_logic_vector(4 downto 0);
+		seed : IN std_logic_vector(5 downto 0);
 		zero_tiles : IN std_logic_vector(15 downto 0);          
 		value_2_4 : OUT std_logic_vector(11 downto 0);
 		location : OUT std_logic_vector(15 downto 0);
 		valid : OUT std_logic;
-		output : OUT std_logic_vector(4 downto 0)
+		output : OUT std_logic_vector(5 downto 0)
 		);
 	END COMPONENT;
 	
@@ -137,8 +140,14 @@ COMPONENT board_4x4
 	signal EXECUTE: std_logic;
 	signal BOARDIDLE: std_logic;
 	signal DIR_VALID: std_logic;
-	signal ENABLE_MVGEN:std_logic;
+	--signal ENABLE_MVGEN:std_logic;
 	signal GAMEOVER_SIG:std_logic;
+	signal ENABLE_LFSR: std_logic;
+	signal tileValid: std_logic;
+	
+	signal counter : integer :=0;
+	signal counter_enable: std_logic;
+	constant tileLoadCycles: integer := 3;
 
 begin
 
@@ -185,30 +194,36 @@ Inst_LFSR: LFSR PORT MAP(
 		clk => CLK,
 		reset => RESET,
 		enable => ENABLE_LFSR,
-		seed => "01101",
+		seed => "001101",
 		zero_tiles => ISZERO_VECT,
 		value_2_4 => INITVAL,
 		location => INITLOC_VECT_LFSR,
 		valid => tileValid,
 		output => open
 	);
+	
+DIROUTPUT <= DIRECTION;
 
 fsmProcess: process(CLK, RESET)
 begin
 	if rising_edge(clk) then
 		if RESET = '1' then -- reset state
 			currentState <= s_Reset;
-		elsif GAMEOVER_SIG = '1' then
-			currentState <= s_GameOver;
+			counter <= 0;
 		else
 			currentState <= nextState;
+			if counter_enable = '0' then
+				counter <= 0;
+			else
+				counter <= counter +1;
+			end if;
 		end if;
 	end if;
 end process fsmProcess;
 ---------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------
-fsmStateLogic: process(currentState)
+fsmStateLogic: process(currentState, tileValid, INITLOC_VECT_LFSR, START, LOAD, DIR_VALID, BOARDIDLE, GAMEOVER_SIG)
 begin
 
 --Default values for signals
@@ -218,11 +233,12 @@ begin
 	INITLOC_VECT <= (others => '0');
 	ENABLE_LFSR <= '0';
 	DO_FILEWRITE <='0';
+
 	
 	case currentState is
 		
 		when s_Reset =>
-			nextState <= s_GenerateBoard;
+			nextState <= s_GenerateBoard_tile1;
 			ENABLE_LFSR <= '1';
 
 			
@@ -230,24 +246,39 @@ begin
 			if tileValid = '1' then
 				ENABLE_LFSR <= '0';
 				INITLOC_VECT <= INITLOC_VECT_LFSR;
-				nextState <= s_GenerateBoard_tile2;
+				nextState <= s_waitForLoad_tile1;
 			else
 				ENABLE_LFSR <= '1';
 				nextState <= s_randomTile;
+			end if;
+			
+		when s_waitForLoad_tile1 =>
+			if tileValid = '1' then
+				INITLOC_VECT <= INITLOC_VECT_LFSR;
+				nextState <= s_waitForLoad_tile1;
+			else
+				nextState <= s_GenerateBoard_tile2;
 			end if;
 			
 		when s_GenerateBoard_tile2 =>
 				if tileValid = '1' then
 					ENABLE_LFSR <= '0';
 					INITLOC_VECT <= INITLOC_VECT_LFSR;
-					nextState <= s_GetMOVE;
-					ENABLE_READMOVE <= '1'; --set readmove high to get new move
+					nextState <= s_waitForLoad_tile2;
+
 			else
 					ENABLE_LFSR <= '1';
-					nextState <= s_randomTile;
+					nextState <= s_GenerateBoard_tile2;
 			end if;
 			
-		
+		when s_waitForLoad_tile2 =>
+			if tileValid = '1' then
+				INITLOC_VECT <= INITLOC_VECT_LFSR;
+				nextState <= s_waitForLoad_tile2;
+			else
+				nextState <= s_WaitForStart;
+				DO_FILEWRITE <= '1';
+			end if;
 
 		when s_WaitForStart => -- do nothing until start high, if load high goto the load state;
 			if START = '1' then
@@ -288,12 +319,31 @@ begin
 			if tileValid = '1' then
 				ENABLE_LFSR <= '0';
 				INITLOC_VECT <= INITLOC_VECT_LFSR;
-				nextState <= s_GetMOVE;
-				ENABLE_READMOVE <= '1'; --set readmove high to get new move
-				DO_FILEWRITE <= '1';
+				nextState <= s_waitForLoad_randomTile;
+
 			else
 				ENABLE_LFSR <= '1';
 				nextState <= s_randomTile;
+			end if;
+			
+		when s_waitForLoad_randomTile =>
+		if tileValid = '1' then
+			INITLOC_VECT <= INITLOC_VECT_LFSR;
+			nextState <= s_waitForLoad_randomTile;
+		else
+			nextState <= s_checkGameover;
+		end if;
+			
+			
+		when s_checkGameover =>
+		
+			if GAMEOVER_SIG = '1' then
+				DO_FILEWRITE <= '1';
+				nextState <= s_GameOver;
+			else 
+				DO_FILEWRITE <= '1';
+								ENABLE_READMOVE <= '1'; --set readmove high to get new move
+				nextState <= s_GetMOVE;
 			end if;
 
 		

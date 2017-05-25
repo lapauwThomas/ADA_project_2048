@@ -29,10 +29,13 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 --USE ieee.numeric_std.ALL;
 use ieee.std_logic_arith.all; --conv_integer
+use ieee.std_logic_textio.all;  --for writing to console
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
+ 
+ 
  
 ENTITY LFSR_TB IS
 END LFSR_TB;
@@ -46,12 +49,12 @@ ARCHITECTURE behavior OF LFSR_TB IS
          clk : IN  std_logic;
          reset : IN  std_logic;
 			enable : IN std_logic;
-         seed : IN  std_logic_vector(4 downto 0);
+         seed : IN  std_logic_vector(5 downto 0);
 		   zero_tiles : in std_logic_vector (15 downto 0);
 			value_2_4 : out std_logic_vector( 11 downto 0 ); 
 		   location : out std_logic_vector( 15 downto 0 );
 			valid : out std_logic;
-         output : OUT  std_logic_vector(4 downto 0)
+         output : OUT  std_logic_vector(5 downto 0)
         );
     END COMPONENT;
     
@@ -60,11 +63,11 @@ ARCHITECTURE behavior OF LFSR_TB IS
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
 	signal enable : std_logic := '0';
-   signal seed : std_logic_vector(4 downto 0) := (others => '0');
+   signal seed : std_logic_vector(5 downto 0) := (others => '0');
 	signal zero_tiles : std_logic_vector (15 downto 0);
 
  	--Outputs
-   signal output : std_logic_vector(4 downto 0);
+   signal output : std_logic_vector(5 downto 0);
 	signal value_2_4 : std_logic_vector( 11 downto 0 ); 
    signal location : std_logic_vector( 15 downto 0 );
 	signal valid : std_logic;
@@ -74,8 +77,23 @@ ARCHITECTURE behavior OF LFSR_TB IS
 	
 	--Test signals
 	----for 5 bit LFSR: 2^5 - 1 (=31) possible outputs
-	signal register_output : std_logic_vector( 30 downto 0) := (others => '0'); --signal to test that all outputs occured
-	constant ones : std_logic_vector( 30 downto 0) := (others => '1'); --constant to check registered_output against
+	signal register_output : std_logic_vector( 62 downto 0) := (others => '0'); --signal to test that all outputs occured
+	constant ones : std_logic_vector( 62 downto 0) := (others => '1'); --constant to check registered_output against
+ 
+ 
+	--Function to write std_logic_vector to console
+	function to_string ( a: std_logic_vector) return string is
+		variable b : string (1 to a'length) := (others => NUL);
+		variable stri : integer := 1; 
+	begin
+		for i in a'range loop
+			b(stri) := std_logic'image(a((i)))(2);
+			stri := stri+1;
+		end loop;
+	return b;
+	end function; 
+ 
+ 
  
 BEGIN
  
@@ -108,7 +126,7 @@ BEGIN
       -- hold reset state for 100 ns.
       reset <= '1';
 		enable <= '0';
-		seed <= "01101"; 
+		seed <= "001101"; 
 		zero_tiles <= ( others => '1');
 		
 		assert value_2_4 = (value_2_4'range => '0') report "LFSR: ERROR in reset";
@@ -129,26 +147,32 @@ BEGIN
 		
 		
 		--1. test for randomness (full length) of LFSR
-		for i in 0 to 31 loop
+		for i in 0 to 62 loop
 			register_output( conv_integer(unsigned(output)) -1 ) <= '1';
 			wait for clk_period;
 		end loop;
 		
+		report "Assert registered output @time:";
 		assert register_output = ones report "ERROR: not all random output combination occured!";
+		
 		
 		--2. do other tests
 		----assume one tile is not zero
-		zero_tiles <= "1111"&"1101"&"1111"&"1111";
+		zero_tiles <= "1111"&"1101"&"1111"&"1111"; --rightmost tile is "0th tile"
 		wait for clk_period;
 		
-		--for i in 0 to 31 loop
-		--	assert valid = '0' report "Tile is not zero occured";
-		--	wait for clk_period;
-		--end loop;
+		for i in 0 to 62 loop
+			assert valid = '1' report "A non-zero tile occured at location: " & to_string(output(3 downto 0)) severity note;
+			wait for clk_period;
+		end loop;
 		
-		--zero_tiles <= "1111"&"1111"&"1111"&"1111";
+		
+		zero_tiles <= "1111"&"1111"&"1111"&"1111";
 		
       wait;
    end process;
 
 END;
+
+
+

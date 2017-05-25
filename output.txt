@@ -1,336 +1,516 @@
  
-Simulation time is :210000 ps
-     
+Simulation time is :180000 ps
+Left 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           0           0           0           #
+ #           0           0           0           4           #
+ #           0           0           0           4           #
+ #           0           0           0           0           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :330000 ps
+Down 
  
  #           #           #           #           #           #
  
  #           0           0           0           0           #
  #           0           0           0           0           #
  #           0           0           0           0           #
- #           0           0           0           0           #
+ #           0           0           2           8           #
  
  #           #           #           #           #           #
  
-Simulation time is :360000 ps
-     
+Simulation time is :440000 ps
+Up   
  
  #           #           #           #           #           #
  
+ #           0           0           2           8           #
  #           0           0           0           0           #
  #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           2           #
+ #           0           4           0           0           #
  
  #           #           #           #           #           #
  
-Simulation time is :510000 ps
-     
+Simulation time is :550000 ps
+Left 
  
  #           #           #           #           #           #
  
+ #           2           8           0           0           #
  #           0           0           0           0           #
- #           0           2           0           0           #
- #           0           0           0           0           #
- #           0           0           0           2           #
+ #           0           0           0           4           #
+ #           4           0           0           0           #
  
  #           #           #           #           #           #
  
 Simulation time is :660000 ps
-     
+Right
  
  #           #           #           #           #           #
  
- #           2           0           0           0           #
- #           0           2           0           0           #
+ #           0           0           2           8           #
+ #           0           0           4           0           #
+ #           0           0           0           4           #
+ #           0           0           0           4           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :770000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
  #           0           0           0           0           #
- #           0           0           0           2           #
+ #           0           0           0           0           #
+ #           0           0           2           8           #
+ #           0           2           4           8           #
  
  #           #           #           #           #           #
  
-Simulation time is :810000 ps
-     
- 
- #           #           #           #           #           #
- 
- #           2           0           0           0           #
- #           0           2           0           0           #
- #           2           0           0           0           #
- #           0           0           0           2           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :970000 ps
+Simulation time is :880000 ps
 Left 
  
  #           #           #           #           #           #
  
- #           2           0           0           0           #
- #           2           0           0           0           #
- #           2           0           0           0           #
- #           2           0           0           0           #
+ #           0           0           0           0           #
+ #           0           0           0           0           #
+ #           2           8           4           0           #
+ #           2           4           8           0           #
  
  #           #           #           #           #           #
  
-Simulation time is :1130000 ps
-Left 
+Simulation time is :990000 ps
+Down 
  
  #           #           #           #           #           #
  
- #           2           0           0           0           #
- #           2           0           0           0           #
- #           2           0           0           0           #
- #           2           0           0           0           #
+ #           0           0           0           0           #
+ #           4           0           0           0           #
+ #           0           8           4           0           #
+ #           4           4           8           0           #
  
  #           #           #           #           #           #
  
-Simulation time is :1280000 ps
-Left 
+Simulation time is :1100000 ps
+Right
  
  #           #           #           #           #           #
  
- #           2           0           0           0           #
- #           2           0           0           0           #
- #           2           0           0           0           #
- #           2           0           0           0           #
+ #           0           0           0           0           #
+ #           0           0           0           4           #
+ #           0           2           0           4           #
+ #           0           0           8           8           #
  
  #           #           #           #           #           #
  
-Simulation time is :1440000 ps
+Simulation time is :1210000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           0           4           0           #
+ #           0           0           0           0           #
+ #           0           0           0           8           #
+ #           0           2           8           8           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :1320000 ps
 Up   
  
  #           #           #           #           #           #
  
- #           4           0           0           0           #
- #           4           0           0           0           #
+ #           0           2           4          16           #
+ #           2           0           8           0           #
  #           0           0           0           0           #
  #           0           0           0           0           #
  
  #           #           #           #           #           #
  
-Simulation time is :1600000 ps
-Left 
+Simulation time is :1430000 ps
+Down 
  
  #           #           #           #           #           #
  
- #           4           0           0           0           #
- #           4           0           0           0           #
  #           0           0           0           0           #
  #           0           0           0           0           #
+ #           0           2           4           0           #
+ #           2           2           8          16           #
  
  #           #           #           #           #           #
  
-Simulation time is :1750000 ps
-Left 
+Simulation time is :1540000 ps
+Right
  
  #           #           #           #           #           #
  
- #           4           4           0           0           #
- #           4           0           0           0           #
+ #           0           0           0           4           #
  #           0           0           0           0           #
  #           0           0           0           0           #
+ #           0           4           8          16           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :1660000 ps
+Up   
+ 
+ #           #           #           #           #           #
+ 
+ #           0           4           8           4           #
+ #           0           0           0          16           #
+ #           0           0           0           0           #
+ #           0           0           2           0           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :1770000 ps
+Right
+ 
+ #           #           #           #           #           #
+ 
+ #           0           4           8           4           #
+ #           0           0           0          16           #
+ #           0           0           0           0           #
+ #           4           0           0           2           #
  
  #           #           #           #           #           #
  
 Simulation time is :1910000 ps
-Down 
- 
- #           #           #           #           #           #
- 
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           8           4           0           0           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :2070000 ps
-Left 
- 
- #           #           #           #           #           #
- 
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           8           4           0           0           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :2220000 ps
-Left 
- 
- #           #           #           #           #           #
- 
- #           0           0           0           0           #
- #           0           2           0           0           #
- #           0           0           0           0           #
- #           8           4           0           0           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :2380000 ps
-Right
- 
- #           #           #           #           #           #
- 
- #           0           0           0           0           #
- #           0           0           0           2           #
- #           0           0           0           2           #
- #           0           0           8           4           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :2540000 ps
-Right
- 
- #           #           #           #           #           #
- 
- #           0           0           0           0           #
- #           0           0           0           2           #
- #           0           0           0           2           #
- #           0           0           8           4           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :2700000 ps
-Down 
- 
- #           #           #           #           #           #
- 
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           4           #
- #           0           0           8           4           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :2860000 ps
-Right
- 
- #           #           #           #           #           #
- 
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           4           #
- #           0           0           8           4           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :3020000 ps
 Up   
  
  #           #           #           #           #           #
  
- #           0           0           8           8           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- 
- #           #           #           #           #           #
- 
-Simulation time is :3180000 ps
-Right
- 
- #           #           #           #           #           #
- 
+ #           4           4           8           4           #
  #           0           0           0          16           #
+ #           4           0           0           2           #
  #           0           0           0           0           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2020000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           4           0           0           #
+ #           0           0           0           4           #
+ #           0           0           0          16           #
+ #           8           4           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2130000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           0           2           0           #
+ #           0           0           0           4           #
+ #           0           0           0          16           #
+ #           8           8           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2240000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
  #           0           0           0           0           #
+ #           0           2           0           4           #
+ #           0           0           2          16           #
+ #           8           8           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2410000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           0           4           0           #
+ #           0           0           0           4           #
+ #           0           2           2          16           #
+ #           8           8           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2520000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
  #           0           0           0           0           #
+ #           0           2           4           4           #
+ #           0           2           2          16           #
+ #           8           8           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2640000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           0           0           0           #
+ #           4           0           4           4           #
+ #           0           4           2          16           #
+ #           8           8           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2760000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           4           0           0           #
+ #           0           0           4           4           #
+ #           4           4           2          16           #
+ #           8           8           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :2870000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           0           0           2           #
+ #           0           0           4           4           #
+ #           4           8           2          16           #
+ #           8           8           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :3010000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           4           0           0           2           #
+ #           0           0           4           4           #
+ #           4           0           2          16           #
+ #           8          16           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :3120000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           2           0           2           #
+ #           0           0           4           4           #
+ #           8           0           2          16           #
+ #           8          16           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :3230000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           0           0           2           2           #
+ #           0           0           4           4           #
+ #           0           2           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
 Simulation time is :3340000 ps
-Right
+Down 
  
  #           #           #           #           #           #
  
- #           0           0           0          16           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           0           0           2           2           #
+ #           2           0           4           4           #
+ #           0           2           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
-Simulation time is :3500000 ps
-Left 
+Simulation time is :3460000 ps
+Down 
  
  #           #           #           #           #           #
  
- #          16           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           4           0           2           2           #
+ #           0           0           4           4           #
+ #           2           2           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
-Simulation time is :3660000 ps
-Right
+Simulation time is :3570000 ps
+Down 
  
  #           #           #           #           #           #
  
- #           0           0           0          16           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           2           0           2           2           #
+ #           4           0           4           4           #
+ #           2           2           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
-Simulation time is :3820000 ps
-Left 
+Simulation time is :3680000 ps
+Down 
  
  #           #           #           #           #           #
  
- #          16           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           2           2           2           2           #
+ #           4           0           4           4           #
+ #           2           2           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
-Simulation time is :3980000 ps
-Right
+Simulation time is :3870000 ps
+Down 
  
  #           #           #           #           #           #
  
- #           0           0           0          16           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           2           0           2           2           #
+ #           4           4           4           4           #
+ #           2           4           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
-Simulation time is :4140000 ps
-Right
+Simulation time is :3990000 ps
+Down 
  
  #           #           #           #           #           #
  
- #           0           0           0          16           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           2           0           2           2           #
+ #           4           4           4           4           #
+ #           2           8           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
-Simulation time is :4300000 ps
-Left 
+Simulation time is :4350000 ps
+Down 
  
  #           #           #           #           #           #
  
- #          16           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           2           4           2           2           #
+ #           4           4           4           4           #
+ #           2           8           2          16           #
+ #          16          16           8           2           #
  
  #           #           #           #           #           #
  
-Simulation time is :4460000 ps
-Right
+Simulation time is :4590000 ps
+Down 
  
  #           #           #           #           #           #
  
- #           0           0           0          16           #
- #           0           0           0           0           #
- #           0           0           0           0           #
- #           0           0           0           0           #
+ #           2           4           2           2           #
+ #           4           8           4           4           #
+ #           2           8           2          16           #
+ #          16          16           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :4750000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           2           2           2           #
+ #           4           4           4           4           #
+ #           2          16           2          16           #
+ #          16          16           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :4910000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           2           2           2           #
+ #           4           2           4           4           #
+ #           2           4           2          16           #
+ #          16          32           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :5380000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           4           2           2           #
+ #           4           4           4           4           #
+ #           2           4           2          16           #
+ #          16          32           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :5620000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           4           2           2           #
+ #           4           4           4           4           #
+ #           2           8           2          16           #
+ #          16          32           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :5780000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           2           2           2           #
+ #           4           8           4           4           #
+ #           2           8           2          16           #
+ #          16          32           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :5940000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           2           2           2           #
+ #           4           2           4           4           #
+ #           2          16           2          16           #
+ #          16          32           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :6410000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           4           2           2           #
+ #           4           4           4           4           #
+ #           2          16           2          16           #
+ #          16          32           8           2           #
+ 
+ #           #           #           #           #           #
+ 
+Simulation time is :6650000 ps
+Down 
+ 
+ #           #           #           #           #           #
+ 
+ #           2           4           2           2           #
+ #           4           8           4           4           #
+ #           2          16           2          16           #
+ #          16          32           8           2           #
  
  #           #           #           #           #           #

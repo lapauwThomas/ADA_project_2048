@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project
 Eboard_4x4
-Z1 w1495649368
+Z1 w1495718584
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -17,13 +17,13 @@ Z4 8board_4x4.vhd
 Z5 Fboard_4x4.vhd
 l0
 L32
-VWKZSz6;4UH:QjK9>l@FoT1
-!s100 bcEDV?faR@7[<o5e9`XU>0
+Vl:j=9b9gb_]9m[TR3b^Nm0
+!s100 WiJW>fidC>TTeDmk_NYJH0
 Z6 OP;C;10.4a;61
 31
-Z7 !s110 1495649391
+Z7 !s110 1495721316
 !i10b 1
-Z8 !s108 1495649391.000000
+Z8 !s108 1495721316.000000
 Z9 !s90 -reportprogress|300|-explicit|-93|board_4x4.vhd|
 Z10 !s107 board_4x4.vhd|
 !i113 1
@@ -32,11 +32,11 @@ Z12 tExplicit 1
 Abehavioral
 R2
 R3
-DEx4 work 9 board_4x4 0 22 WKZSz6;4UH:QjK9>l@FoT1
-l237
-L73
-V<abb210Q:_01RzbI]eQ=h1
-!s100 OE;PPNi^[j?k6`L4@`l7]2
+DEx4 work 9 board_4x4 0 22 l:j=9b9gb_]9m[TR3b^Nm0
+l281
+L74
+VBDmPd8JbnhNnLN^2edX<A1
+!s100 `]blPTLP<BO]B<nkO4J2m1
 R6
 31
 R7
@@ -61,11 +61,11 @@ VW3HR]LRUWhb^iRzOW]O?G1
 !s100 LA^MBbbeQU_]f_o_N2mWM0
 R6
 31
-R7
+Z17 !s110 1495649391
 !i10b 1
-R8
-Z17 !s90 -reportprogress|300|-explicit|-93|FileIO.vhd|
-Z18 !s107 FileIO.vhd|
+Z18 !s108 1495649391.000000
+Z19 !s90 -reportprogress|300|-explicit|-93|FileIO.vhd|
+Z20 !s107 FileIO.vhd|
 !i113 1
 R11
 R12
@@ -73,39 +73,199 @@ Abehavioral
 R14
 R3
 R2
-Z19 DEx4 work 6 fileio 0 22 W3HR]LRUWhb^iRzOW]O?G1
+DEx4 work 6 fileio 0 22 W3HR]LRUWhb^iRzOW]O?G1
 l184
 L40
-Z20 VlGc9Nn54;`SC;N5]mSGU]2
-Z21 !s100 E=bz]g2U6nJ<ZQX38c9hE2
+VlGc9Nn54;`SC;N5]mSGU]2
+!s100 E=bz]g2U6nJ<ZQX38c9hE2
+R6
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Egame_logic
+Z21 w1495721313
+R2
+R3
+R0
+Z22 8Game_logic.vhd
+Z23 FGame_logic.vhd
+l0
+L32
+Vf[BG5e@YUNPHA26PaTZ3D3
+!s100 HLkzE7aeLoC6k_ag]RaZN0
 R6
 31
 R7
 !i10b 1
 R8
-R17
-R18
+Z24 !s90 -reportprogress|300|-explicit|-93|Game_logic.vhd|
+Z25 !s107 Game_logic.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 game_logic 0 22 f[BG5e@YUNPHA26PaTZ3D3
+l152
+L69
+V^hIOWL6`YAY=o2>zmBLCD1
+!s100 6_=<>G0K]Nd96@?9YG<TH1
+R6
+31
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R11
+R12
+Egame_sim
+Z26 w1495720325
+R14
+R3
+R2
+R0
+Z27 8GAME_SIM_TB.vhd
+Z28 FGAME_SIM_TB.vhd
+l0
+L36
+VglDgR10ZbFHE6;J5O0TPX2
+!s100 FCb8_2>V7Kd[>?_JbZJF]0
+R6
+31
+R7
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|-explicit|-93|GAME_SIM_TB.vhd|
+Z30 !s107 GAME_SIM_TB.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R3
+R2
+Z31 DEx4 work 8 game_sim 0 22 glDgR10ZbFHE6;J5O0TPX2
+l176
+L40
+Z32 V34F`WzGCnnNE?[n;15S^U2
+Z33 !s100 j=]XPz=dO<Rz2fnS05mjE0
+R6
+31
+R7
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R11
+R12
+Elfsr
+Z34 w1495718597
+R14
+R2
+R3
+R0
+Z35 8LFSR.vhd
+Z36 FLFSR.vhd
+l0
+L33
+VZ1dkSRET5:QGjV_zk6LZB1
+!s100 SPUWn9BL<hQggV6S5kcDR1
+R6
+31
+R7
+!i10b 1
+Z37 !s108 1495721315.000000
+Z38 !s90 -reportprogress|300|-explicit|-93|LFSR.vhd|
+Z39 !s107 LFSR.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R2
+R3
+DEx4 work 4 lfsr 0 22 Z1dkSRET5:QGjV_zk6LZB1
+l51
+L45
+Ve;n=:TJFMTh419f7Oh2zP2
+!s100 SAY@LWPQU<a?M[zJ_YD<_1
+R6
+31
+R7
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R11
+R12
+Emove_gen
+Z40 w1495708716
+R2
+R3
+R0
+Z41 8MOVE_GEN.vhd
+Z42 FMOVE_GEN.vhd
+l0
+L34
+VTd0okMXhPim5jlSKz8c_31
+!s100 SJ`6oXz0JJn8gU1DOFjK40
+R6
+31
+Z43 !s110 1495721315
+!i10b 1
+R37
+Z44 !s90 -reportprogress|300|-explicit|-93|MOVE_GEN.vhd|
+Z45 !s107 MOVE_GEN.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 8 move_gen 0 22 Td0okMXhPim5jlSKz8c_31
+l50
+L43
+VN7KiOnD4SzKk`L_ZdO0Wl1
+!s100 83@=R@]OMP;z@hXhfga<=3
+R6
+31
+R43
+!i10b 1
+R37
+R44
+R45
 !i113 1
 R11
 R12
 Etb_board
-Z22 w1495636198
+Z46 w1495636198
 R2
 R3
 R0
-Z23 8TB_board.vhd
-Z24 FTB_board.vhd
+Z47 8TB_board.vhd
+Z48 FTB_board.vhd
 l0
 L35
 VzVXP2oF8P3`KA87T=8dWH2
 !s100 IHCRNBe1RJMX2J48T<H;J2
 R6
 31
-Z25 !s110 1495640768
+Z49 !s110 1495640768
 !i10b 1
-Z26 !s108 1495640768.000000
-Z27 !s90 -reportprogress|300|-explicit|-93|TB_board.vhd|
-Z28 !s107 TB_board.vhd|
+Z50 !s108 1495640768.000000
+Z51 !s90 -reportprogress|300|-explicit|-93|TB_board.vhd|
+Z52 !s107 TB_board.vhd|
 !i113 1
 R11
 R12
@@ -119,33 +279,33 @@ V3N]lW3QKV5>:`Hc0Ycl;R2
 !s100 Dejf9B0PF@4Eac^L^IEYI3
 R6
 31
-R25
+R49
 !i10b 1
-R26
-R27
-R28
+R50
+R51
+R52
 !i113 1
 R11
 R12
 Etile
-Z29 w1495634974
+Z53 w1495720980
 R14
 R2
 R3
 R0
-Z30 8tile.vhd
-Z31 Ftile.vhd
+Z54 8tile.vhd
+Z55 Ftile.vhd
 l0
 L33
-V9ZNfK_^fn<7lQLU^kI?:[3
-!s100 JgJT6;Ph^ozC6]UV:MS5C2
+VDOHPZG`7emD:o^1HTT;oZ0
+!s100 MMRG]4M:WF=g<@4cdTBj`3
 R6
 31
-Z32 !s110 1495649390
+R43
 !i10b 1
-Z33 !s108 1495649390.000000
-Z34 !s90 -reportprogress|300|-explicit|-93|tile.vhd|
-Z35 !s107 tile.vhd|
+R37
+Z56 !s90 -reportprogress|300|-explicit|-93|tile.vhd|
+Z57 !s107 tile.vhd|
 !i113 1
 R11
 R12
@@ -153,18 +313,18 @@ Abehavioral
 R14
 R2
 R3
-DEx4 work 4 tile 0 22 9ZNfK_^fn<7lQLU^kI?:[3
-l121
-L70
-VXE==^Mhz>1GdS@KP;j1Lz3
-!s100 f_VS^g3RWhLQ_F2T=0B5]1
+DEx4 work 4 tile 0 22 DOHPZG`7emD:o^1HTT;oZ0
+l123
+L72
+Vo0OmCFQ>^cgoW6HJ;^^]X0
+!s100 m:d?nghK?S@_Xb?[J>PNl1
 R6
 31
-R32
+R43
 !i10b 1
-R33
-R34
-R35
+R37
+R56
+R57
 !i113 1
 R11
 R12

@@ -34,18 +34,19 @@ entity LFSR is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
 			  enable : in STD_LOGIC;
-           seed : in  STD_LOGIC_VECTOR ( 4 downto 0);
+           seed : in  STD_LOGIC_VECTOR ( 5 downto 0);
 			  zero_tiles : in std_logic_vector (15 downto 0); --16 parallel lines, '1' indicates value inside block is zero; '0' indicates value inside block is non-zero
 			  value_2_4 : out std_logic_vector( 11 downto 0 ) := (others => '0'); --either "0..010" (2) or "0..100" (4)
 			  location : out std_logic_vector( 15 downto 0 ) := (others => '0') ; --16 parallel lines from which one is '1' at a given time and indicating the block to write random value in
            valid : out std_logic := '0';
-			  output : out  STD_LOGIC_VECTOR ( 4 downto 0) := (others => '0') ); --only used in testbench
+			  output : out  STD_LOGIC_VECTOR ( 5 downto 0 ) := (others => '0') ); --only used in testbench
 end LFSR;
 
 architecture Behavioral of LFSR is
 
-signal internal_LFSR : std_logic_vector( 4 downto 0 ) := (others => '0');
+signal internal_LFSR : std_logic_vector( 5 downto 0 ) := (others => '0');
 signal location_internal : std_logic_vector( 15 downto 0 ) := (others => '0');
+signal ValidSelector: std_logic_vector(15 downto 0);
 
 begin
 	process(clk)
@@ -62,9 +63,9 @@ begin
 					
 					--LFSR core
 					----shift register
-					internal_LFSR( 4 downto 1 ) <= internal_LFSR( 3 downto 0 );
+					internal_LFSR( 5 downto 1 ) <= internal_LFSR( 4 downto 0 );
 					----feedback tabs for 5bit
-					internal_LFSR(0) <= ( internal_LFSR(1) xor internal_LFSR(4) );
+					internal_LFSR(0) <= ( internal_LFSR(0) xor internal_LFSR(5) );
 					
 					--output
 					--output <= internal_LFSR( 4 downto 0 );			
@@ -91,7 +92,7 @@ begin
 	end process;
 			
 			
-	output <= internal_LFSR( 4 downto 0 );	
+	output <= internal_LFSR( 5 downto 0 );	
 	--location_internal <= ( conv_integer( unsigned( internal_LFSR( 3 downto 0 ) ) ) => '1' , others => '0' );
 	--location_internal <= ((others => '0')&'1' ) srl to_integer(unsigned( internal_LFSR( 3 downto 0 )));
 	location <= location_internal AND zero_tiles;
@@ -101,9 +102,9 @@ begin
 		(2 => '1' , others => '0') when '1',
 		(others => '0')				when others;
 		
-		
-	with (location_internal AND zero_tiles) select valid <=
-		'0' when (location_internal'range => '0'),
+		ValidSelector <= (location_internal AND zero_tiles);
+	with ValidSelector select valid <=
+		'0' when "0000000000000000",
 		'1' when others;	
 
  with internal_LFSR(3 downto 0) select location_internal <=

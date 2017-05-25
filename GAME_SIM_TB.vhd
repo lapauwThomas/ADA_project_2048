@@ -86,6 +86,8 @@ constant dirDown: std_logic_vector(1 downto 0) := "11";
 		LOAD : IN std_logic;          
 		GAMEOVER : OUT std_logic;
 		ENABLE_READMOVE: out std_logic;
+		DO_FILEWRITE: out std_logic;
+		DIROUTPUT: out STD_LOGIC_VECTOR(1 downto 0);
 		OUT_VALUE_BL11 : OUT std_logic_vector(11 downto 0);
 		OUT_VALUE_BL12 : OUT std_logic_vector(11 downto 0);
 		OUT_VALUE_BL13 : OUT std_logic_vector(11 downto 0);
@@ -137,6 +139,7 @@ constant dirDown: std_logic_vector(1 downto 0) := "11";
 	signal LOAD:std_logic:='0';
 	signal START: std_logic := '0';
 	signal GAMEOVER: std_logic := '0';
+	signal doFileWrite: std_logic:= '0';
 		
 	------------------------------------------------------------------------------
 	--test signals
@@ -161,6 +164,7 @@ constant dirDown: std_logic_vector(1 downto 0) := "11";
    signal OUT_VALUE_BL42 : std_logic_vector(11 downto 0);
    signal OUT_VALUE_BL43 : std_logic_vector(11 downto 0);
    signal OUT_VALUE_BL44 : std_logic_vector(11 downto 0);
+	
 
 	----array for dummy tiles
 	type array_type is array (0 to 15) of std_logic_vector(11 downto 0);
@@ -204,7 +208,9 @@ begin
 		GAMEOVER => GAMEOVER,
 		START => START,
 		LOAD => LOAD,
-		ENABLE_READMOVE<= enable_reading_moves,
+		ENABLE_READMOVE => enable_reading_moves,
+		DO_FILEWRITE => doFileWrite,
+		DIROUTPUT => direction,
 			 OUT_VALUE_BL11 => OUT_VALUE_BL11,
           OUT_VALUE_BL12 => OUT_VALUE_BL12,
           OUT_VALUE_BL13 => OUT_VALUE_BL13,
@@ -356,7 +362,8 @@ begin
 							--dataread <= dataread1; 		
 							
 							--'pos gives the numerical position of a given character in the ASCII table enumeration 
-							dataread <= conv_std_logic_vector(character'pos(dataread1),8);		
+							dataread <= conv_std_logic_vector(character'pos(dataread1),8);
+							report "reading new character" severity note;
 						end if;
 		
 						
@@ -427,7 +434,7 @@ begin
 			else --only if no initial grid is being loaded, the output values of the tiles can be written
 		
 				--write whenever valid goes high: this means a valid move was read
-				if(valid='1') then
+				if(doFileWrite='1') then
 					report "Writing in file" severity note;
 								
 					--1st row of white spaces before each move
@@ -519,437 +526,437 @@ begin
    stim_proc: process
    begin	
 
- wait for 100 ns;	
+ wait for 10 ns;	
 		RESET <= '1';
 		wait for 100 ns;	
 		RESET <= '0';
-		
+		wait for 100 ns;
 		--Write to file
 		wait for 10 ns;
-		valid <='1';
+		START <='1';
 		wait for 10 ns;
-		valid <='0';
+		START <='0';
 		
-		
-		
-		INITVAL <= "000000000010";
-		wait for 10 ns;
-		INITLOC <= "1000" & "0000" & "0000" & "0000" ;
-		wait for 20 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		INITVAL <= "000000000010";
-		wait for 10 ns;
-		INITLOC <= "0000" & "0000" & "0010" & "0000" ;
-		wait for 20 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		INITVAL <= "0000"& "0000" &"0010";
-		wait for 10 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0001" ;
-		wait for 20 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-				INITVAL <= "0000"& "0000" &"0010";
-		wait for 10 ns;
-		INITLOC <= "0000" & "0001" & "0000" & "0000" ;
-		wait for 20 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-		DIRECTION <= dirLEFT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-		
+--		
+--		
 --		INITVAL <= "000000000010";
 --		wait for 10 ns;
---		INIT_BL2 <= '1';
+--		INITLOC <= "1000" & "0000" & "0000" & "0000" ;
 --		wait for 20 ns;
---		INIT_BL2 <= '0';	
+--		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
 --		wait for 100 ns;
 --		
-		
-		DIRECTION <= dirLEFT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-				INITVAL <= "0000"& "0000" &"0010";
-		wait for 10 ns;
-		INITLOC <= "0000" & "0001" & "0000" & "0000" ;
-		wait for 20 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
---		INITVAL <= "000000000100";
+--				--Write to file
 --		wait for 10 ns;
---		INIT_BL2 <= '1';
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		INITVAL <= "000000000010";
+--		wait for 10 ns;
+--		INITLOC <= "0000" & "0000" & "0010" & "0000" ;
 --		wait for 20 ns;
---		INIT_BL2 <= '0';	
+--		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
 --		wait for 100 ns;
 --		
-		
-		DIRECTION <= dirUP;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirLEFT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-				INITVAL <= "0000"& "0000" &"0100";
-		wait for 10 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0010" ;
-		wait for 20 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-				DIRECTION <= dirDOWN;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirLEFT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-				INITVAL <= "0000"& "0000" &"0010";
-		wait for 10 ns;
-		INITLOC <= "0000" & "0000" & "0010" & "0000" ;
-		wait for 20 ns;
-		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-						DIRECTION <= dirDOWN;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
 --		
---				INITVAL <= "000000000010";
+--		
+--		INITVAL <= "0000"& "0000" &"0010";
 --		wait for 10 ns;
---		INIT_BL1 <= '1';
+--		INITLOC <= "0000" & "0000" & "0000" & "0001" ;
 --		wait for 20 ns;
---		INIT_BL1 <= '0';	
+--		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
 --		wait for 100 ns;
-		
-						DIRECTION <= dirUP;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-						DIRECTION <= dirLEFT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
---				
---				INITVAL <= "000000001000";
+--		
+--				--Write to file
 --		wait for 10 ns;
---		INIT_BL1 <= '1';
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--				INITVAL <= "0000"& "0000" &"0010";
+--		wait for 10 ns;
+--		INITLOC <= "0000" & "0001" & "0000" & "0000" ;
 --		wait for 20 ns;
---		INIT_BL1 <= '0';	
+--		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
 --		wait for 100 ns;
-		
-						DIRECTION <= dirLEFT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-						DIRECTION <= dirLEFT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns;
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
-		
-		
-		
-				DIRECTION <= dirRIGHT;
-		wait for 20 ns;
-		EXECUTE <= '1';
-		wait for 20 ns;
-		EXECUTE <= '0';
-		wait for 100 ns; 
-		
-				--Write to file
-		wait for 10 ns;
-		valid <='1';
-		wait for 10 ns;
-		valid <='0';
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--		DIRECTION <= dirLEFT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--		
+----		INITVAL <= "000000000010";
+----		wait for 10 ns;
+----		INIT_BL2 <= '1';
+----		wait for 20 ns;
+----		INIT_BL2 <= '0';	
+----		wait for 100 ns;
+----		
+--		
+--		DIRECTION <= dirLEFT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--				INITVAL <= "0000"& "0000" &"0010";
+--		wait for 10 ns;
+--		INITLOC <= "0000" & "0001" & "0000" & "0000" ;
+--		wait for 20 ns;
+--		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+----		INITVAL <= "000000000100";
+----		wait for 10 ns;
+----		INIT_BL2 <= '1';
+----		wait for 20 ns;
+----		INIT_BL2 <= '0';	
+----		wait for 100 ns;
+----		
+--		
+--		DIRECTION <= dirUP;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirLEFT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--				INITVAL <= "0000"& "0000" &"0100";
+--		wait for 10 ns;
+--		INITLOC <= "0000" & "0000" & "0000" & "0010" ;
+--		wait for 20 ns;
+--		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--				DIRECTION <= dirDOWN;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirLEFT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--				INITVAL <= "0000"& "0000" &"0010";
+--		wait for 10 ns;
+--		INITLOC <= "0000" & "0000" & "0010" & "0000" ;
+--		wait for 20 ns;
+--		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--						DIRECTION <= dirDOWN;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+----		
+----				INITVAL <= "000000000010";
+----		wait for 10 ns;
+----		INIT_BL1 <= '1';
+----		wait for 20 ns;
+----		INIT_BL1 <= '0';	
+----		wait for 100 ns;
+--		
+--						DIRECTION <= dirUP;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--						DIRECTION <= dirLEFT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+----				
+----				INITVAL <= "000000001000";
+----		wait for 10 ns;
+----		INIT_BL1 <= '1';
+----		wait for 20 ns;
+----		INIT_BL1 <= '0';	
+----		wait for 100 ns;
+--		
+--						DIRECTION <= dirLEFT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--						DIRECTION <= dirLEFT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns;
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
+--		
+--		
+--		
+--				DIRECTION <= dirRIGHT;
+--		wait for 20 ns;
+--		EXECUTE <= '1';
+--		wait for 20 ns;
+--		EXECUTE <= '0';
+--		wait for 100 ns; 
+--		
+--				--Write to file
+--		wait for 10 ns;
+--		valid <='1';
+--		wait for 10 ns;
+--		valid <='0';
 		
 		     wait for CLK_period*10;
 
