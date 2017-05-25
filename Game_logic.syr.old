@@ -1,0 +1,618 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Game_logic.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Game_logic.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Game_logic"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-fg456
+
+---- Source Options
+Top Module Name                    : Game_logic
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/tile.vhd" in Library work.
+Architecture behavioral of Entity tile is up to date.
+Compiling vhdl file "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" in Library work.
+Architecture behavioral of Entity board_4x4 is up to date.
+Compiling vhdl file "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/MOVE_GEN.vhd" in Library work.
+Architecture behavioral of Entity move_gen is up to date.
+Compiling vhdl file "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.vhd" in Library work.
+Entity <game_logic> compiled.
+Entity <game_logic> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Game_logic> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <board_4x4> in library <work> (architecture <behavioral>) with generics.
+	busWidth = 12
+
+Analyzing hierarchy for entity <MOVE_GEN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tile> in library <work> (architecture <behavioral>) with generics.
+	boardSize = 4
+	busWidth = 12
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Game_logic> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.vhd" line 181: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <START>, <LOAD>, <DIR_VALID>, <BOARDIDLE>
+Entity <Game_logic> analyzed. Unit <Game_logic> generated.
+
+Analyzing generic Entity <board_4x4> in library <work> (Architecture <behavioral>).
+	busWidth = 12
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 333: Unconnected output port 'MOVE_OUT_LEFT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 333: Unconnected output port 'MOVE_OUT_TOP' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 364: Unconnected output port 'MOVE_OUT_TOP' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 396: Unconnected output port 'MOVE_OUT_TOP' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 429: Unconnected output port 'MOVE_OUT_RIGHT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 429: Unconnected output port 'MOVE_OUT_TOP' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 461: Unconnected output port 'MOVE_OUT_LEFT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 553: Unconnected output port 'MOVE_OUT_RIGHT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 583: Unconnected output port 'MOVE_OUT_LEFT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 676: Unconnected output port 'MOVE_OUT_RIGHT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 707: Unconnected output port 'MOVE_OUT_LEFT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 707: Unconnected output port 'MOVE_OUT_BOTTOM' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 739: Unconnected output port 'MOVE_OUT_BOTTOM' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 771: Unconnected output port 'MOVE_OUT_BOTTOM' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 804: Unconnected output port 'MOVE_OUT_RIGHT' of component 'tile'.
+WARNING:Xst:753 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd" line 804: Unconnected output port 'MOVE_OUT_BOTTOM' of component 'tile'.
+Entity <board_4x4> analyzed. Unit <board_4x4> generated.
+
+Analyzing generic Entity <tile> in library <work> (Architecture <behavioral>).
+	boardSize = 4
+	busWidth = 12
+INFO:Xst:1561 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/tile.vhd" line 235: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/tile.vhd" line 298: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/tile.vhd" line 372: Mux is complete : default of case is discarded
+Entity <tile> analyzed. Unit <tile> generated.
+
+Analyzing Entity <MOVE_GEN> in library <work> (Architecture <behavioral>).
+Entity <MOVE_GEN> analyzed. Unit <MOVE_GEN> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MOVE_GEN>.
+    Related source file is "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/MOVE_GEN.vhd".
+    Found 2-bit register for signal <direction>.
+    Found 1-bit register for signal <valid>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <MOVE_GEN> synthesized.
+
+
+Synthesizing Unit <tile>.
+    Related source file is "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/tile.vhd".
+INFO:Xst:1799 - State s_checkmove_premerge is never reached in FSM <currentState>.
+INFO:Xst:1799 - State s_checkmove_postmerge is never reached in FSM <currentState>.
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s_reset                                        |
+    | Power Up State     | s_reset                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit comparator equal for signal <ALLOW_MERGE_FROM_BOTTOM$cmp_eq0000> created at line 450.
+    Found 12-bit comparator equal for signal <ALLOW_MERGE_FROM_LEFT$cmp_eq0000> created at line 444.
+    Found 12-bit comparator equal for signal <ALLOW_MERGE_FROM_RIGHT$cmp_eq0000> created at line 438.
+    Found 12-bit comparator equal for signal <ALLOW_MERGE_FROM_TOP$cmp_eq0000> created at line 456.
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit comparator less for signal <currentState$cmp_lt0000> created at line 306.
+    Found 12-bit register for signal <sigVALUE_REG>.
+    Found 12-bit 4-to-1 multiplexer for signal <sigVALUE_REG$mux0002> created at line 197.
+    Found 12-bit 4-to-1 multiplexer for signal <sigVALUE_REG$mux0003> created at line 330.
+    Found 12-bit adder for signal <sigVALUE_REG$share0000> created at line 197.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <tile> synthesized.
+
+
+Synthesizing Unit <board_4x4>.
+    Related source file is "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/board_4x4.vhd".
+Unit <board_4x4> synthesized.
+
+
+Synthesizing Unit <Game_logic>.
+    Related source file is "C:/Users/thoma/CloudStation/School/2MA/semester2/ADA/labs/project/Game_logic.vhd".
+WARNING:Xst:646 - Signal <ISZERO_VECT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <INITVAL> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000.
+WARNING:Xst:653 - Signal <INITLOC_VECT> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <ENABLE_MVGEN> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Using one-hot encoding for signal <currentState>.
+WARNING:Xst:737 - Found 9-bit latch for signal <nextState>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 9-bit register for signal <currentState>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <Game_logic> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 16
+ 12-bit adder                                          : 16
+# Counters                                             : 16
+ 32-bit up counter                                     : 16
+# Registers                                            : 19
+ 1-bit register                                        : 1
+ 12-bit register                                       : 16
+ 2-bit register                                        : 1
+ 9-bit register                                        : 1
+# Latches                                              : 1
+ 9-bit latch                                           : 1
+# Comparators                                          : 80
+ 12-bit comparator equal                               : 64
+ 32-bit comparator less                                : 16
+# Multiplexers                                         : 32
+ 12-bit 4-to-1 multiplexer                             : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_board_4x4/BL11/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL12/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL13/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL14/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL21/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL22/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL23/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL24/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL31/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL32/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL33/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL34/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL41/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL42/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL43/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+Optimizing FSM <Inst_board_4x4/BL44/currentState/FSM> on signal <currentState[1:6]> with one-hot encoding.
+-----------------------------------
+ State                 | Encoding
+-----------------------------------
+ s_reset               | 000001
+ s_init                | 000100
+ s_idle                | 000010
+ s_checkmove_premerge  | unreached
+ s_move_premerge       | 001000
+ s_merge               | 100000
+ s_checkmove_postmerge | unreached
+ s_move_postmerge      | 010000
+-----------------------------------
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 2.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <direction_1> has a constant value of 0 in block <Inst_MOVE_GEN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <direction_0> has a constant value of 0 in block <Inst_MOVE_GEN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <currentState_1> of sequential type is unconnected in block <Game_logic>.
+WARNING:Xst:2677 - Node <currentState_7> of sequential type is unconnected in block <Game_logic>.
+WARNING:Xst:2677 - Node <currentState_8> of sequential type is unconnected in block <Game_logic>.
+WARNING:Xst:2677 - Node <currentState_1> of sequential type is unconnected in block <Game_logic>.
+WARNING:Xst:2677 - Node <currentState_7> of sequential type is unconnected in block <Game_logic>.
+WARNING:Xst:2677 - Node <currentState_8> of sequential type is unconnected in block <Game_logic>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 16
+ 12-bit adder                                          : 16
+# Counters                                             : 16
+ 32-bit up counter                                     : 16
+# Registers                                            : 201
+ Flip-Flops                                            : 201
+# Latches                                              : 1
+ 9-bit latch                                           : 1
+# Comparators                                          : 80
+ 12-bit comparator equal                               : 64
+ 32-bit comparator less                                : 16
+# Multiplexers                                         : 32
+ 12-bit 4-to-1 multiplexer                             : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_1.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <8> has a constant value of 0 in block <LPM_LATCH_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <direction_0> has a constant value of 0 in block <MOVE_GEN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <direction_1> has a constant value of 0 in block <MOVE_GEN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <nextState_1> of sequential type is unconnected in block <Game_logic>.
+WARNING:Xst:2677 - Node <nextState_7> of sequential type is unconnected in block <Game_logic>.
+
+Optimizing unit <Game_logic> ...
+
+Optimizing unit <tile> ...
+
+Optimizing unit <board_4x4> ...
+WARNING:Xst:1293 - FF/Latch <Inst_board_4x4/BL11/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL12/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL13/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL14/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL21/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL22/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL23/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL24/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL31/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL32/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL33/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL34/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL41/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL42/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL43/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_board_4x4/BL44/currentState_FSM_FFd4> has a constant value of 0 in block <Game_logic>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <Inst_board_4x4/BL11/currentState_FSM_FFd6> in Unit <Game_logic> is equivalent to the following 15 FFs/Latches, which will be removed : <Inst_board_4x4/BL12/currentState_FSM_FFd6> <Inst_board_4x4/BL13/currentState_FSM_FFd6> <Inst_board_4x4/BL14/currentState_FSM_FFd6> <Inst_board_4x4/BL21/currentState_FSM_FFd6> <Inst_board_4x4/BL22/currentState_FSM_FFd6> <Inst_board_4x4/BL23/currentState_FSM_FFd6> <Inst_board_4x4/BL24/currentState_FSM_FFd6> <Inst_board_4x4/BL31/currentState_FSM_FFd6> <Inst_board_4x4/BL32/currentState_FSM_FFd6> <Inst_board_4x4/BL33/currentState_FSM_FFd6> <Inst_board_4x4/BL34/currentState_FSM_FFd6> <Inst_board_4x4/BL41/currentState_FSM_FFd6> <Inst_board_4x4/BL42/currentState_FSM_FFd6> <Inst_board_4x4/BL43/currentState_FSM_FFd6> <Inst_board_4x4/BL44/currentState_FSM_FFd6> 
+Found area constraint ratio of 100 (+ 5) on block Game_logic, actual ratio is 29.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 776
+ Flip-Flops                                            : 776
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Game_logic.ngr
+Top Level Output File Name         : Game_logic
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 205
+
+Cell Usage :
+# BELS                             : 3866
+#      GND                         : 1
+#      INV                         : 96
+#      LUT1                        : 512
+#      LUT2                        : 234
+#      LUT2_D                      : 4
+#      LUT2_L                      : 2
+#      LUT3                        : 172
+#      LUT3_D                      : 12
+#      LUT3_L                      : 52
+#      LUT4                        : 800
+#      LUT4_D                      : 43
+#      LUT4_L                      : 117
+#      MUXCY                       : 1036
+#      MUXF5                       : 80
+#      VCC                         : 1
+#      XORCY                       : 704
+# FlipFlops/Latches                : 782
+#      FDR                         : 550
+#      FDRS                        : 224
+#      FDS                         : 2
+#      LD_1                        : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 204
+#      IBUF                        : 11
+#      OBUF                        : 193
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400fg456-5 
+
+ Number of Slices:                     1049  out of   3584    29%  
+ Number of Slice Flip Flops:            782  out of   7168    10%  
+ Number of 4 input LUTs:               2044  out of   7168    28%  
+ Number of IOs:                         205
+ Number of bonded IOBs:                 205  out of    264    77%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------+------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)  | Load  |
+-------------------------------------+------------------------+-------+
+nextState_or0000(nextState_or00001:O)| NONE(*)(nextState_0)   | 6     |
+CLK                                  | BUFGP                  | 776   |
+-------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.930ns (Maximum Frequency: 100.703MHz)
+   Minimum input arrival time before clock: 6.462ns
+   Maximum output required time after clock: 15.455ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 9.930ns (frequency: 100.703MHz)
+  Total number of paths / destination ports: 76856 / 1510
+-------------------------------------------------------------------------
+Delay:               9.930ns (Levels of Logic = 7)
+  Source:            Inst_board_4x4/BL13/sigVALUE_REG_4 (FF)
+  Destination:       currentState_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Inst_board_4x4/BL13/sigVALUE_REG_4 to currentState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q            13   0.626   1.290  Inst_board_4x4/BL13/sigVALUE_REG_4 (Inst_board_4x4/BL13/sigVALUE_REG_4)
+     LUT4:I0->O            2   0.479   0.915  Inst_board_4x4/BL13/ALLOW_MOVE_FROM_BOTTOM_cmp_eq000025 (Inst_board_4x4/BL13/ALLOW_MOVE_FROM_BOTTOM_cmp_eq000025)
+     LUT3:I1->O           16   0.479   1.074  Inst_board_4x4/BL13/ALLOW_MOVE_FROM_BOTTOM_cmp_eq000051 (Inst_board_4x4/ISZERO_BL13)
+     LUT4_D:I3->O          1   0.479   0.704  Inst_board_4x4/BL23/ALLOW_MOVE_FROM_BOTTOM_or00001 (Inst_board_4x4/MV_BL23_BL33<1>)
+     LUT4_L:I3->LO         1   0.479   0.123  Inst_board_4x4/GAMEOVER_SIG395_SW0 (N585)
+     LUT4:I3->O            1   0.479   0.704  Inst_board_4x4/GAMEOVER_SIG395 (Inst_board_4x4/GAMEOVER_SIG395)
+     LUT4:I3->O            7   0.479   0.965  Inst_board_4x4/GAMEOVER_SIG471 (Inst_board_4x4/GAMEOVER_SIG471)
+     LUT3:I2->O            1   0.479   0.000  currentState_mux0002<8>111 (currentState_mux0002<8>11)
+     FDS:D                     0.176          currentState_0
+    ----------------------------------------
+    Total                      9.930ns (4.155ns logic, 5.775ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'nextState_or0000'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              2.346ns (Levels of Logic = 2)
+  Source:            LOAD (PAD)
+  Destination:       nextState_3 (LATCH)
+  Destination Clock: nextState_or0000 rising
+
+  Data Path: LOAD to nextState_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  LOAD_IBUF (LOAD_IBUF)
+     LUT3:I0->O            1   0.479   0.000  nextState_mux0001<3>1 (nextState_mux0001<3>)
+     LD_1:D                    0.176          nextState_3
+    ----------------------------------------
+    Total                      2.346ns (1.370ns logic, 0.976ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 794 / 776
+-------------------------------------------------------------------------
+Offset:              6.462ns (Levels of Logic = 2)
+  Source:            RESET (PAD)
+  Destination:       Inst_board_4x4/BL11/counter_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to Inst_board_4x4/BL11/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           279   0.715   2.801  RESET_IBUF (RESET_IBUF)
+     LUT4:I3->O           32   0.479   1.575  Inst_board_4x4/BL44/counter_or0000 (Inst_board_4x4/BL44/counter_or0000)
+     FDR:R                     0.892          Inst_board_4x4/BL44/counter_0
+    ----------------------------------------
+    Total                      6.462ns (2.086ns logic, 4.376ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1872 / 193
+-------------------------------------------------------------------------
+Offset:              15.455ns (Levels of Logic = 8)
+  Source:            Inst_board_4x4/BL13/sigVALUE_REG_4 (FF)
+  Destination:       GAMEOVER (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Inst_board_4x4/BL13/sigVALUE_REG_4 to GAMEOVER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q            13   0.626   1.290  Inst_board_4x4/BL13/sigVALUE_REG_4 (Inst_board_4x4/BL13/sigVALUE_REG_4)
+     LUT4:I0->O            2   0.479   0.915  Inst_board_4x4/BL13/ALLOW_MOVE_FROM_BOTTOM_cmp_eq000025 (Inst_board_4x4/BL13/ALLOW_MOVE_FROM_BOTTOM_cmp_eq000025)
+     LUT3:I1->O           16   0.479   1.074  Inst_board_4x4/BL13/ALLOW_MOVE_FROM_BOTTOM_cmp_eq000051 (Inst_board_4x4/ISZERO_BL13)
+     LUT4_D:I3->O          1   0.479   0.704  Inst_board_4x4/BL23/ALLOW_MOVE_FROM_BOTTOM_or00001 (Inst_board_4x4/MV_BL23_BL33<1>)
+     LUT4_L:I3->LO         1   0.479   0.123  Inst_board_4x4/GAMEOVER_SIG395_SW0 (N585)
+     LUT4:I3->O            1   0.479   0.704  Inst_board_4x4/GAMEOVER_SIG395 (Inst_board_4x4/GAMEOVER_SIG395)
+     LUT4:I3->O            7   0.479   1.076  Inst_board_4x4/GAMEOVER_SIG471 (Inst_board_4x4/GAMEOVER_SIG471)
+     LUT2:I1->O            1   0.479   0.681  Inst_board_4x4/GAMEOVER_SIG5041 (GAMEOVER_OBUF)
+     OBUF:I->O                 4.909          GAMEOVER_OBUF (GAMEOVER)
+    ----------------------------------------
+    Total                     15.455ns (8.888ns logic, 6.567ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.77 secs
+ 
+--> 
+
+Total memory usage is 272984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   69 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

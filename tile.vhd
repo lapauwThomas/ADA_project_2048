@@ -47,6 +47,8 @@ entity tile is
            INITVAL 				: in  STD_LOGIC_VECTOR 	((busWidth-1) downto 0);
 			  
 			  ISZERO : out std_logic;
+			  ISIDLE: out std_logic;
+			  CANMOVE: out std_logic;
 
 			  MOVE_OUT_LEFT		: OUT  STD_LOGIC_VECTOR 	(1 downto 0);
 			  MOVE_OUT_RIGHT		: OUT  STD_LOGIC_VECTOR 	(1 downto 0);
@@ -161,28 +163,30 @@ fsmStateLogic: process(currentState, sigVALUE_REG, INITVAL, EXECUTE, DIRECTION, 
 								LEFT_TILE, MERGE_INTO_TOP, BOTTOM_TILE, MERGE_INTO_BOTTOM, TOP_TILE,    
 								MOVE_INTO_LEFT, MOVE_INTO_TOP, MOVE_INTO_RIGHT, MOVE_INTO_BOTTOM, counter, INIT)
 begin
+	counter_enable <= '0'; --default value
+	ISIDLE<= '0'; --default value
 	case currentState is
 		
 		when s_Reset =>
 			sigVALUE <= (others => '0'); --reset tile value
 			nextState <= s_Idle; -- prepare next state. This is only executed if reset is not high
-			counter_enable <= '0';
+			
+			
 			
 		when s_Init =>
 			sigVALUE <= INITVAL;
 			nextState <= s_Idle;
-			counter_enable <= '0';
+
 			
 		when s_Idle =>
+			ISIDLE<= '1';
 			if(EXECUTE = '1') then -- wait for newMove trigger
 				nextState <= s_Move_preMerge;
 				counter_enable <= '1';
 			elsif (INIT = '1') then --goto init state
 				nextState <= s_Init;
-				counter_enable <= '0';
 			else
 				nextState <= s_Idle;
-				counter_enable <= '0';
 			end if;
 			sigVALUE <= sigVALUE_REG;
 
@@ -235,7 +239,6 @@ begin
 					sigVALUE <= sigVALUE_REG;
 					
 			end case;
-			
 			nextState <= s_Move_postMerge;
 			counter_enable <= '1';
 			
@@ -375,14 +378,6 @@ begin
 			end case;
 			
 								
---			if ( counter < maxMoves_preMerge) then 
---				nextState <= s_Move_postMerge;
---				counter_enable <= '1';
---			else 
---				nextState <= s_Idle;
---				counter_enable <= '0';
---			end if;
---			nextState <= s_CheckMove_postMerge;
 
 
 			if ( counter < maxMoves_postMerge) then 
@@ -392,12 +387,12 @@ begin
 				nextState <= s_Idle;
 				counter_enable <= '0';
 			end if;
-			
+
 --///////////////////////////////////// OTHERS /////////////////////////////////////			
 		when others => --if into unknown state go to reset state
 			nextState <= s_Reset;
 			sigVALUE <= sigVALUE_REG;
-			counter_enable <= '0';
+
 		
 
 	end case;
@@ -474,6 +469,8 @@ else
 ISZERO <= '1';
 end if;
 end process iszeroProc;
+
+CANMOVE <= ALLOW_MOVE_FROM_RIGHT and ALLOW_MOVE_FROM_LEFT and ALLOW_MOVE_FROM_TOP and ALLOW_MOVE_FROM_BOTTOM and ALLOW_MERGE_FROM_RIGHT and ALLOW_MERGE_FROM_LEFT and ALLOW_MERGE_FROM_TOP and ALLOW_MERGE_FROM_BOTTOM;
 
 
 end Behavioral;

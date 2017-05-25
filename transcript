@@ -1920,3 +1920,5 @@ do {FileIO.fdo}
 #    Time: 4300 ns  Iteration: 1  Instance: /fileio
 # ** Note: Writing in file
 #    Time: 4460 ns  Iteration: 1  Instance: /fileio
+# End time: 20:54:57 on May 24,2017, Elapsed time: 0:45:05
+# Errors: 0, Warnings: 0
