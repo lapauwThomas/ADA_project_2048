@@ -29,10 +29,16 @@ sim:/game_sim/Inst_Game_logic/currentState
 #add wave -position insertpoint  \
 #sim:/game_sim/Inst_Game_logic/ISZERO_VECT
 
-add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/VALIDDIRECTIONS_SIG
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/VALIDDIRECTIONS_SIG
 
-add wave -position insertpoint  \
-sim:/game_sim/Inst_Game_logic/ENABLE_READMOVE
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/ENABLE_READMOVE
 add wave -position insertpoint  \
 sim:/game_sim/Inst_Game_logic/EXECUTE
+
+#add wave -position insertpoint  \
+#sim:/game_sim/Inst_Game_logic/DIR_VALIDs
+
+add wave -position insertpoint  \
+sim:/game_sim/Inst_Game_logic/counter

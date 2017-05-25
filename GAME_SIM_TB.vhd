@@ -31,7 +31,7 @@ use std.textio.all;  --include package textio.vhd
 library ieee;
 USE ieee.std_logic_1164.ALL;
 use ieee.std_logic_arith.all; --conv_integer
-
+use ieee.numeric_std_unsigned.all ;
 --entity declaration
 entity GAME_SIM is
 end GAME_SIM;
@@ -88,6 +88,8 @@ constant dirDown: std_logic_vector(1 downto 0) := "11";
 		ENABLE_READMOVE: out std_logic;
 		DO_FILEWRITE: out std_logic;
 		DIROUTPUT: out STD_LOGIC_VECTOR(1 downto 0);
+		tileINDEX: out  std_logic_vector(3 downto 0);
+		tileVAL: in std_logic_vector(11 downto 0);
 		OUT_VALUE_BL11 : OUT std_logic_vector(11 downto 0);
 		OUT_VALUE_BL12 : OUT std_logic_vector(11 downto 0);
 		OUT_VALUE_BL13 : OUT std_logic_vector(11 downto 0);
@@ -123,8 +125,15 @@ constant dirDown: std_logic_vector(1 downto 0) := "11";
 	--Signals used to load a custom grid at initialisation
 	--Initialisation is done by pulling load_grid high for 1 clk pulse
 	------------------------------------------------------------------------------
-	type array_type_2 is array (0 to 35) of string(1 to 4);
-	signal configuration_array : array_type_2 := (others => "0000");
+--	type array_type_2 is array (0 to 35) of string(1 to 4);
+--	signal configuration_array : array_type_2 := (others => "0000");
+
+	type integerArr is array(0 to 16) of integer;
+	signal gridArray : integerArr; 
+	
+	signal tileINDEX: std_logic_vector(3 downto 0);
+	signal tileVAL: std_logic_vector(11 downto 0);
+	
 	
 	signal load_grid : std_logic;
 	------------------------------------------------------------------------------
@@ -210,7 +219,9 @@ begin
 		LOAD => LOAD,
 		ENABLE_READMOVE => enable_reading_moves,
 		DO_FILEWRITE => doFileWrite,
+		tileINDEX => tileINDEX,
 		DIROUTPUT => direction,
+		tileVAL => tileVAL,
 			 OUT_VALUE_BL11 => OUT_VALUE_BL11,
           OUT_VALUE_BL12 => OUT_VALUE_BL12,
           OUT_VALUE_BL13 => OUT_VALUE_BL13,
@@ -263,63 +274,48 @@ begin
 
 
 
---	------------------------------------------------------------------------------
---	--Read in initial grid 
---	--1 clk pulse on load_grid will initialise the load of the grid
---	------------------------------------------------------------------------------
---	loading_grid: process
---		 file   infile_grid    : text is in  "initial_grid.txt";   --declare input file
---		 variable  inline_grid    : line; --line number declaration
---		 variable  dataread1_grid    : character;
---	begin
---		wait until rising_edge(clk); 
---			if reset = '1' then
---				dataread_grid <= (others => '0');
---				endoffile_grid <= '0';
---				valid_grid <= '0';
---			else
---				if load_grid = '1' then --enable signal
---					
---					--valid_grid <= '1';
---					
---					--use 3 for loops to read in grid
---					for k in 0 to 5 loop --iterate vertically
---						
---					   --always first read 1 line from a file
---						readline(infile_grid, inline_grid); 
---					  
---					   for l in 0 to 5 loop --iterate horizontally
---						
---								for m in 0 to 3 loop --read in the values from 0-2048
---									--read 1 character from a line
---									read(inline_grid, dataread1_grid);
---									--put the character into a string
---									--dataread_grid(m+1) <= dataread1_grid; --4 characters into 1 string
---									
---									configuration_array(k*6 + l)(m+1) <= dataread1_grid;
---
---									
---								end loop; --m
---						
---								
---								--wait until rising_edge(clk);
---						
---						end loop; --l
---					
---					end loop; --k 				  
---					 
---					valid_grid <= '1';	
---				else
---					valid_grid <= '0';
---					
---				end if; --load_grid
---			
---			end if;	--reset			
---
---	end process loading_grid;
---	------------------------------------------------------------------------------
 	------------------------------------------------------------------------------
+	--Read in initial grid 
+	--1 clk pulse on load_grid will initialise the load of the grid
+	------------------------------------------------------------------------------
+	loading_grid: process
+		 file   infile_grid    : text is in  "initial_grid.txt";   --declare input file
+		 variable  inline_grid    : line; --line number declaration
+		 variable  dataread1_grid    : character;
+		 variable valueRead: integer;
+	begin
+		wait until rising_edge(clk); 
+			if reset = '1' then
+				dataread_grid <= (others => '0');
+				endoffile_grid <= '0';
+				valid_grid <= '0';
+			else
+				if load_grid = '1' then --enable signal
 
+					for k in 0 to 15 loop --iterate vertically
+					   --always first read 1 line from a file
+						if (not endfile(infile_grid)) then 
+							readline(infile_grid, inline_grid); 
+							read(inline_grid, valueRead);
+							report "The value of is " & integer'image(valueRead) severity note;
+							gridArray(k) <= valueRead;			
+						end if;
+
+					end loop; --k 				  
+				end if; --load_grid
+			
+			end if;	--reset			
+
+	end process loading_grid;
+	------------------------------------------------------------------------------
+	----------------------------------------------------------------------------
+	loadgrid: process(tileINDEX)
+	variable index: integer;
+	begin
+	index := conv_integer( unsigned(tileINDEX ));
+	tileVAL <= conv_std_logic_vector(conv_unsigned(gridArray(index),12),tileVAL'length);
+	
+	end process loadgrid;
 
 
 	------------------------------------------------------------------------------
@@ -411,27 +407,27 @@ begin
 		 variable  outline  : line;   --line number declaration  
 	begin
 		if falling_edge(clk) then
-			if valid_grid = '1' then
-				
-				--use 2 for loops to write the 2D grid into output file
-				for n in 0 to 5 loop --vertically
-				
-					write(outline,integer'value(configuration_array(n*6 + 0)), right, 2);
-					
-					for o in 0 to 3 loop --horizontally
-					
-						write(outline,integer'value(configuration_array(n*6 + o + 1)), right, 12); --configuration_array is an 
-																															-- array of strings
-						
-					end loop; --o
-					
-					write(outline,integer'value(configuration_array(n*6 + 5)), right, 2);
-					
-					writeline(outfile, outline);
-					
-				end loop; --n	
-			
-			else --only if no initial grid is being loaded, the output values of the tiles can be written
+--			if valid_grid = '1' then
+--				
+--				--use 2 for loops to write the 2D grid into output file
+--				for n in 0 to 5 loop --vertically
+--				
+--					write(outline,integer'value(configuration_array(n*6 + 0)), right, 2);
+--					
+--					for o in 0 to 3 loop --horizontally
+--					
+--						write(outline,integer'value(configuration_array(n*6 + o + 1)), right, 12); --configuration_array is an 
+--																															-- array of strings
+--						
+--					end loop; --o
+--					
+--					write(outline,integer'value(configuration_array(n*6 + 5)), right, 2);
+--					
+--					writeline(outfile, outline);
+--					
+--				end loop; --n	
+--			
+--			else --only if no initial grid is being loaded, the output values of the tiles can be written
 		
 				--write whenever valid goes high: this means a valid move was read
 				if(doFileWrite='1') then
@@ -497,7 +493,7 @@ begin
 					writeline(outfile, outline);				
 					
 				end if; --valid
-			end if; --load_grid			
+--			end if; --load_grid			
 		end if; --clk	
 	end process writing_grid;
 	------------------------------------------------------------------------------
@@ -525,442 +521,47 @@ begin
 	------------------------------------------------------------------------------
    stim_proc: process
    begin	
-
- wait for 10 ns;	
+	load_grid <= '1';
+	 wait for 10 ns;	
 		RESET <= '1';
 		wait for 100 ns;	
 		RESET <= '0';
 		wait for 100 ns;
-		--Write to file
+		wait for 10 ns;
+		LOAD <='1';
+		wait for 10 ns;
+		LOAD <='0';
+		
+		wait for 500 ns;
 		wait for 10 ns;
 		START <='1';
 		wait for 10 ns;
 		START <='0';
-		
---		
---		
---		INITVAL <= "000000000010";
---		wait for 10 ns;
---		INITLOC <= "1000" & "0000" & "0000" & "0000" ;
---		wait for 20 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		INITVAL <= "000000000010";
---		wait for 10 ns;
---		INITLOC <= "0000" & "0000" & "0010" & "0000" ;
---		wait for 20 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		INITVAL <= "0000"& "0000" &"0010";
---		wait for 10 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0001" ;
---		wait for 20 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---				INITVAL <= "0000"& "0000" &"0010";
---		wait for 10 ns;
---		INITLOC <= "0000" & "0001" & "0000" & "0000" ;
---		wait for 20 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---		DIRECTION <= dirLEFT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---		
-----		INITVAL <= "000000000010";
-----		wait for 10 ns;
-----		INIT_BL2 <= '1';
-----		wait for 20 ns;
-----		INIT_BL2 <= '0';	
-----		wait for 100 ns;
-----		
---		
---		DIRECTION <= dirLEFT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---				INITVAL <= "0000"& "0000" &"0010";
---		wait for 10 ns;
---		INITLOC <= "0000" & "0001" & "0000" & "0000" ;
---		wait for 20 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
-----		INITVAL <= "000000000100";
-----		wait for 10 ns;
-----		INIT_BL2 <= '1';
-----		wait for 20 ns;
-----		INIT_BL2 <= '0';	
-----		wait for 100 ns;
-----		
---		
---		DIRECTION <= dirUP;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirLEFT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---				INITVAL <= "0000"& "0000" &"0100";
---		wait for 10 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0010" ;
---		wait for 20 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---				DIRECTION <= dirDOWN;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirLEFT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---				INITVAL <= "0000"& "0000" &"0010";
---		wait for 10 ns;
---		INITLOC <= "0000" & "0000" & "0010" & "0000" ;
---		wait for 20 ns;
---		INITLOC <= "0000" & "0000" & "0000" & "0000" ;	
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---						DIRECTION <= dirDOWN;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
-----		
-----				INITVAL <= "000000000010";
-----		wait for 10 ns;
-----		INIT_BL1 <= '1';
-----		wait for 20 ns;
-----		INIT_BL1 <= '0';	
-----		wait for 100 ns;
---		
---						DIRECTION <= dirUP;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---						DIRECTION <= dirLEFT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
-----				
-----				INITVAL <= "000000001000";
-----		wait for 10 ns;
-----		INIT_BL1 <= '1';
-----		wait for 20 ns;
-----		INIT_BL1 <= '0';	
-----		wait for 100 ns;
---		
---						DIRECTION <= dirLEFT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---						DIRECTION <= dirLEFT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns;
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
---		
---		
---		
---				DIRECTION <= dirRIGHT;
---		wait for 20 ns;
---		EXECUTE <= '1';
---		wait for 20 ns;
---		EXECUTE <= '0';
---		wait for 100 ns; 
---		
---				--Write to file
---		wait for 10 ns;
---		valid <='1';
---		wait for 10 ns;
---		valid <='0';
-		
-		     wait for CLK_period*10;
 
-
+-- wait for 10 ns;	
+--		RESET <= '1';
+--		wait for 100 ns;	
+--		RESET <= '0';
+--		wait for 100 ns;
+--		--Write to file
+--		wait for 10 ns;
+--		START <='1';
+--		wait for 10 ns;
+--		START <='0';
+--		
+--		
+--		wait for CLK_period*10;
+--
+-- wait for 20000 ns;	
+--		RESET <= '1';
+--		wait for 100 ns;	
+--		RESET <= '0';
+--		wait for 100 ns;
+--		--Write to file
+--		wait for 10 ns;
+--		START <='1';
+--		wait for 10 ns;
+--		START <='0';
    
       -- hold reset state for 100 ns.
       -- reset <= '1';

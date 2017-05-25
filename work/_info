@@ -21,9 +21,9 @@ V[Q=l`lJAKID2fIhz>dkE>1
 !s100 WS_AZ?Kg5:o8j9:eZg=j]1
 Z6 OP;C;10.4a;61
 31
-Z7 !s110 1495734155
+Z7 !s110 1495742251
 !i10b 1
-Z8 !s108 1495734155.000000
+Z8 !s108 1495742251.000000
 Z9 !s90 -reportprogress|300|-explicit|-93|board_4x4.vhd|
 Z10 !s107 board_4x4.vhd|
 !i113 1
@@ -89,7 +89,8 @@ R20
 R11
 R12
 Egame_logic
-Z21 w1495733667
+Z21 w1495742243
+R14
 R2
 R3
 R0
@@ -97,85 +98,88 @@ Z22 8Game_logic.vhd
 Z23 FGame_logic.vhd
 l0
 L32
-Vf[BG5e@YUNPHA26PaTZ3D3
-!s100 HLkzE7aeLoC6k_ag]RaZN0
+V]CZa0=`eJzA=gzgVR0cfC1
+!s100 GC:3VdL?N^I[L9zGm<AS03
 R6
 31
-Z24 !s110 1495734156
+R7
 !i10b 1
-Z25 !s108 1495734156.000000
-Z26 !s90 -reportprogress|300|-explicit|-93|Game_logic.vhd|
-Z27 !s107 Game_logic.vhd|
+R8
+Z24 !s90 -reportprogress|300|-explicit|-93|Game_logic.vhd|
+Z25 !s107 Game_logic.vhd|
 !i113 1
 R11
 R12
 Abehavioral
+R14
 R2
 R3
-DEx4 work 10 game_logic 0 22 f[BG5e@YUNPHA26PaTZ3D3
-l159
-L69
-VmCgO?YVP]7GK9=Nkj;3e=2
-!s100 E?2C_DRSIYQoE:=bQOaB>3
+DEx4 work 10 game_logic 0 22 ]CZa0=`eJzA=gzgVR0cfC1
+l164
+L72
+VCVk6ll`XgI2eNF0><IKT33
+!s100 QbcUC?8MXXA>kMEBj<R302
 R6
 31
-R24
+R7
 !i10b 1
+R8
+R24
 R25
-R26
-R27
 !i113 1
 R11
 R12
 Egame_sim
-Z28 w1495720325
+Z26 w1495740822
+Z27 DPx4 ieee 20 numeric_std_unsigned 0 22 jF^[l6kSe0l<k3W[UC=P83
 R14
 R3
 R2
 R0
-Z29 8GAME_SIM_TB.vhd
-Z30 FGAME_SIM_TB.vhd
+Z28 8GAME_SIM_TB.vhd
+Z29 FGAME_SIM_TB.vhd
 l0
 L36
-VglDgR10ZbFHE6;J5O0TPX2
-!s100 FCb8_2>V7Kd[>?_JbZJF]0
+VQ?X4V:mVL6QiEnGEL0j0K0
+!s100 L];k4Y4V1i4J`Y=m6a@9f3
 R6
 31
-R24
+R7
 !i10b 1
-R25
-Z31 !s90 -reportprogress|300|-explicit|-93|GAME_SIM_TB.vhd|
-Z32 !s107 GAME_SIM_TB.vhd|
+R8
+Z30 !s90 -reportprogress|300|-explicit|-93|GAME_SIM_TB.vhd|
+Z31 !s107 GAME_SIM_TB.vhd|
 !i113 1
 R11
 R12
 Abehavioral
+R27
 R14
 R3
 R2
-Z33 DEx4 work 8 game_sim 0 22 glDgR10ZbFHE6;J5O0TPX2
-l176
+Z32 DEx4 work 8 game_sim 0 22 Q?X4V:mVL6QiEnGEL0j0K0
+l185
 L40
-Z34 V34F`WzGCnnNE?[n;15S^U2
-Z35 !s100 j=]XPz=dO<Rz2fnS05mjE0
+Z33 VIUK]78eGHiKOY?SmdMNFf1
+Z34 !s100 emFHM;>Em?7TkT_0GShU30
 R6
 31
-R24
+R7
 !i10b 1
-R25
+R8
+R30
 R31
-R32
 !i113 1
 R11
 R12
 Elfsr
-Z36 w1495718597
+Z35 w1495718597
 R14
 R2
 R3
 R0
-Z37 8LFSR.vhd
-Z38 FLFSR.vhd
+Z36 8LFSR.vhd
+Z37 FLFSR.vhd
 l0
 L33
 VZ1dkSRET5:QGjV_zk6LZB1
@@ -185,8 +189,8 @@ R6
 R7
 !i10b 1
 R8
-Z39 !s90 -reportprogress|300|-explicit|-93|LFSR.vhd|
-Z40 !s107 LFSR.vhd|
+Z38 !s90 -reportprogress|300|-explicit|-93|LFSR.vhd|
+Z39 !s107 LFSR.vhd|
 !i113 1
 R11
 R12
@@ -204,18 +208,18 @@ R6
 R7
 !i10b 1
 R8
+R38
 R39
-R40
 !i113 1
 R11
 R12
 Emove_gen
-Z41 w1495732022
+Z40 w1495732022
 R2
 R3
 R0
-Z42 8MOVE_GEN.vhd
-Z43 FMOVE_GEN.vhd
+Z41 8MOVE_GEN.vhd
+Z42 FMOVE_GEN.vhd
 l0
 L34
 VTd0okMXhPim5jlSKz8c_31
@@ -224,7 +228,7 @@ R6
 31
 R7
 !i10b 1
-R8
+Z43 !s108 1495742250.000000
 Z44 !s90 -reportprogress|300|-explicit|-93|MOVE_GEN.vhd|
 Z45 !s107 MOVE_GEN.vhd|
 !i113 1
@@ -242,7 +246,7 @@ R6
 31
 R7
 !i10b 1
-R8
+R43
 R44
 R45
 !i113 1
@@ -301,11 +305,11 @@ V;fidWYG^f?69jjDoIFlQb3
 !s100 0U>NXgENaXVbKig4F@>mo0
 R6
 31
-R7
+Z56 !s110 1495742250
 !i10b 1
-R8
-Z56 !s90 -reportprogress|300|-explicit|-93|tile.vhd|
-Z57 !s107 tile.vhd|
+R43
+Z57 !s90 -reportprogress|300|-explicit|-93|tile.vhd|
+Z58 !s107 tile.vhd|
 !i113 1
 R11
 R12
@@ -320,11 +324,11 @@ V?f1Z`z@19ALCIVeld>Gc_3
 !s100 _Ak58ah8V;d33Wi5S1[9P3
 R6
 31
-R7
-!i10b 1
-R8
 R56
+!i10b 1
+R43
 R57
+R58
 !i113 1
 R11
 R12

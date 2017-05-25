@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+USE ieee.std_logic_arith.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -37,6 +37,9 @@ entity Game_logic is
 			  GAMEOVER: out STD_LOGIC;
 			  START: IN STD_LOGIC;
 			  LOAD: IN STD_LOGIC;
+			  
+			  	tileINDEX: out std_logic_vector(3 downto 0);
+				tileVAL: in std_logic_vector(11 downto 0);
 			  
 			  DO_FILEWRITE: out std_logic;
 			  
@@ -67,7 +70,7 @@ end Game_logic;
 
 	
 architecture Behavioral of Game_logic is
-type state_type is (s_Reset, s_LoadBoard, s_GenerateBoard_tile1,s_checkGameover,s_waitForLoad_randomTile, s_waitForLoad_tile1, s_waitForLoad_tile2, s_GenerateBoard_tile2, s_WaitForStart, s_GetMove, s_Execute, s_waitForIdle, s_randomTile, s_gameOver);
+type state_type is (s_Reset, s_LoadBoard,s_WriteLoadedBoard, s_GenerateBoard_tile1,s_checkGameover,s_waitForLoad_randomTile, s_waitForLoad_tile1, s_waitForLoad_tile2, s_GenerateBoard_tile2, s_WaitForStart, s_GetMove, s_Execute, s_waitForIdle, s_randomTile, s_gameOver);
 
 signal currentState:state_type := s_Reset;
 signal nextState: state_type;
@@ -136,6 +139,8 @@ COMPONENT board_4x4
 	
 	signal INITLOC_VECT_LFSR: std_logic_vector(15 downto 0);
 	
+	signal initVAL_sig: std_logic_vector(11 downto 0);
+	signal INITVAL_lfsr: std_logic_vector( 11 downto 0);
 	SIGNAL DIRECTION: std_logic_vector(1 downto 0);
 	signal EXECUTE: std_logic;
 	signal BOARDIDLE: std_logic;
@@ -161,7 +166,7 @@ begin
 
 Inst_board_4x4: board_4x4 PORT MAP(
 		CLK => CLK,
-		INITVAL => INITVAL,
+		INITVAL => INITVAL_sig,
 		DIRECTION => DIRECTION,
 		EXECUTE => EXECUTE,
 		RESET => RESET,
@@ -203,7 +208,7 @@ Inst_LFSR: LFSR PORT MAP(
 		enable => ENABLE_LFSR,
 		seed => "001101",
 		zero_tiles => ISZERO_VECT,
-		value_2_4 => INITVAL,
+		value_2_4 => INITVAL_lfsr,
 		location => INITLOC_VECT_LFSR,
 		valid => tileValid,
 		output => open
@@ -231,7 +236,7 @@ end process fsmProcess;
 ---------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------
-fsmStateLogic: process(currentState, tileValid, INITLOC_VECT_LFSR, START, LOAD, DIR_VALID, BOARDIDLE, GAMEOVER_SIG, DIRECTION, VALIDDIRECTIONS_SIG)
+fsmStateLogic: process(currentState, tileValid, INITLOC_VECT_LFSR, START, LOAD, DIR_VALID, BOARDIDLE, GAMEOVER_SIG, DIRECTION, VALIDDIRECTIONS_SIG,counter,INITVAL_lfsr, tileVAL)
 begin
 
 --Default values for signals
@@ -241,6 +246,9 @@ begin
 	INITLOC_VECT <= (others => '0');
 	ENABLE_LFSR <= '0';
 	DO_FILEWRITE <='0';
+	counter_enable <= '0';
+	tileINDEX <= (others => '0');
+	initVal_sig <= INITVAL_lfsr;
 
 	
 	case currentState is
@@ -374,6 +382,45 @@ begin
 		when s_GameOver => 
 			GAMEOVER <= '1';
 			nextState <= s_GameOver; --keep in currend state (DEAD END) only get out trough reset;
+			
+			
+			
+			
+		when s_LoadBoard =>
+		counter_enable <= '1';
+		if counter > 16 then
+			nextState <= s_WriteLoadedBoard;
+		else
+			tileIndex <= conv_std_logic_vector(counter-1, tileIndex'length);
+			initVal_Sig <= tileVAL;
+			case counter is
+				when 0 =>INITLOC_VECT <="0000000000000001";
+				when 1 =>INITLOC_VECT <="0000000000000010";
+				when 2 =>INITLOC_VECT <="0000000000000100";
+				when 3 =>INITLOC_VECT <="0000000000001000";
+				when 4 =>INITLOC_VECT <="0000000000010000";
+				when 5 =>INITLOC_VECT <="0000000000100000";
+				when 6 =>INITLOC_VECT <="0000000001000000";
+				when 7 =>INITLOC_VECT <="0000000010000000";
+				when 8 =>INITLOC_VECT <="0000000100000000";
+				when 9 =>INITLOC_VECT <="0000001000000000";
+				when 10 =>INITLOC_VECT <="0000010000000000";
+				when 11 =>INITLOC_VECT <="0000100000000000";
+				when 12 =>INITLOC_VECT <="0001000000000000";
+				when 13 =>INITLOC_VECT <="0010000000000000";
+				when 14 =>INITLOC_VECT <="0100000000000000";
+				when 15 =>INITLOC_VECT <="1000000000000000";
+				when others =>INITLOC_VECT <=(others => '0');
+			end case;
+			nextState <= s_LoadBoard;
+		end if;
+		
+		when s_WriteLoadedBoard =>
+			DO_FILEWRITE <= '1';
+			nextState <= s_WaitForStart;
+		
+		
+			
 		
 		when others =>
 			nextState <= s_reset;
